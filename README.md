@@ -98,3 +98,8 @@ I generally use the following extras most of the time:
 * SimpleSearch. For use on the Page Not Found error page.
 * UltimateParent. Searches up branches to find parent pages at a chosen level. I use this for the bodyClass placeholder mostly.
 * Wayfinder. Makes menus easy.
+
+
+##Additional
+
+Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
