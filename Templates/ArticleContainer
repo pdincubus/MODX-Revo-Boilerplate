@@ -2,9 +2,8 @@
 
 <div id="main" class="cf">
 
-    <article>
-        [[*content]]
-    </article>
+   	<h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+    [[*content]]
     
     [[$articleSidebar]]
 </div>
