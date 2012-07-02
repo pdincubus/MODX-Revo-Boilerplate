@@ -55,6 +55,17 @@ Install the FormIt extra, and with these two simple chunks you can easily drop a
 
 Wayfinder's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.
 
+###quipCommentCustom
+
+Replacement, lovely and trimmed down version of the standard Quip chunk
+
+###quipAddCommentCustom, ArticlesLatestPostTpl, ArchiveGroupByYear, ArticleRowTpl
+
+See above.
+
+
+
+
 ##Snippets
 
 ###copyYears
