@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			table { width: 100%; font-size: 120%; border-collapse: collapse; }
+			table table { font-size: 100%; }
+			table th { text-align: left; }
+			table td, table th { padding: 0.3em; border: 2px solid #666; vertical-align: top; }
+			table table td, table table th { border: none; }
+		</style>
+	</head>
+	
+	<body>
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<th scope="row" style="width:150px">Name</th>
+					<td colspan="2">[[+formName:notags]]</td>
+				</tr>
+				<tr>
+				<th scope="row" style="width:150px">Email address</th>
+					<td colspan="2">[[+formEmailAddress:notags]]</td>
+				</tr>
+				<tr>
+				<th scope="row" style="width:150px">Phone number</th>
+					<td colspan="2">[[+formPhoneNumber:notags]]</td>
+				</tr>
+				<tr>
+				<th scope="row" style="width:150px">Your Query</th>
+				  <td colspan="2">[[+formQuery:notags]]</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

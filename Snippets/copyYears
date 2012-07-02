@@ -1,0 +1,11 @@
+<?php
+// &startYear - first year of notice
+// defaults to current year
+// [[!copyYears?startYear=`2005`]]
+// will display 2005 - 2006 or 2005 - 2007, whatever the current year is.
+
+$spacer = " - ";
+$now = date("Y");
+$startYear = isset($startYear)? $startYear : $now;
+$years = ($now > $startYear) ? $startYear.$spacer.$now : $now;
+return "$years";

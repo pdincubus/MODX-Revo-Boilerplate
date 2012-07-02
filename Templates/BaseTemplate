@@ -1,0 +1,14 @@
+[[$head? &bodyClass=`[[getResourceField? &id=`[[UltimateParent]]` &field=`link_attributes`]]` &template=`{TEMPLATE_FOLDER_NAME}`]]
+
+<div id="main" class="cf">
+
+    <article>
+        <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+        [[*content]]
+    </article>
+    
+    [[$standardSidebar]]
+
+</div>
+
+[[$foot? &template=`{TEMPLATE_FOLDER_NAME}`]]

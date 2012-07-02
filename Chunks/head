@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>[[*pagetitle:escape]] _(o_O)_ [[++site_name]]</title>
+    <meta name="description" content="[[*description]]">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
+    <script src="/assets/templates/[[+template]]/js/vendor/modernizr-2.5.3.min.js"></script>
+</head>
+<body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
+    <header class="cf">
+        <a href="/" id="logo">[[++site_name]]</a>
+        
+        <nav>
+            [[Wayfinder? &startId=`0` &level=`1`]]
+        </nav>
+    </header>
+    

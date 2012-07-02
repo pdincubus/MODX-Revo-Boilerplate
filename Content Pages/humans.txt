@@ -1,0 +1,20 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* SITE */
+
+Lovingly handcrafted
+Framework: Templates based on HTML5 Boilerplate (http://html5boilerplate.com) and the 1140px grid system (http://www.cssgrid.net)
+Technology: LESS, CSS, HTML5, jQuery, MODx 2.2.x
+CMS: Powered by MODx 2.2.x (traditional)
+Doctype: HTML5
+
+/* TEAM */
+
+Lead dev: Your name
+Twitter: @yourname
+Location: YOUR LOCATION
+
+Lead design: Your name
+Twitter: @yourname
+Location: YOUR LOCATION

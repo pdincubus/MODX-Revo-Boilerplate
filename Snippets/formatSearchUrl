@@ -1,0 +1,4 @@
+<?php
+$terms = explode('/', $_REQUEST['q']);
+$requestIndex = (!empty($requestIndex)) ? $requestIndex : 'urlSearch';
+$_REQUEST[$requestIndex] = preg_replace('/\W/', ' ', implode(' ', $terms));

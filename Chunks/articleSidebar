@@ -1,0 +1,31 @@
+<aside>    
+    <h3>Latest Posts</h3>
+    <ul>
+        [[+latest_posts]]
+    </ul>
+
+    [[+comments_enabled:is=`1`:then=`
+    <h3>Latest Comments</h3>
+    <ul>
+        [[+latest_comments]]
+    </ul>    
+    `]]
+
+    <h3>Tags</h3>
+    <ul>
+        [[+tags]]
+    </ul>
+
+    <h3>Archives</h3>
+    <ul>
+        [[+archives]]
+    </ul>
+    
+    <form id="quick-search" action="search-results.html" method="get">
+        <p>
+            <label for="qsearch">Search</label>
+            <input id="qsearch" type="text" name="search" placeholder="Enter search terms">
+            <button type="submit">Go</button>
+        </p>
+    </form>
+</aside>

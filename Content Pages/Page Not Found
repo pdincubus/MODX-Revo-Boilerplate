@@ -1,0 +1,8 @@
+<p>Sorry about that! Something went a little wrong there and we've encountered some kind of problem.</p>
+<p>You can either click "Back" in your browser and try again, choose something else from the menu, or <a href="[[~CONTACT_PAGE_ID]]">drop us a line</a> to let us know there's a problem.</p>
+
+<p>Alternatively, we've had a look around the site for what you seem to be looking for and have found the following results:</p>
+
+<h2>Possible matches for ‘[[!currentUrl]]’</h2>
+[[!formatSearchUrl? &requestIndex=`urlSearch`]]
+[[!SimpleSearch? &searchIndex=`urlSearch` &perPage=`5`]]

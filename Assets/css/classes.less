@@ -1,0 +1,99 @@
+/*class definitions. some stolen from LESS Elements 0.6 by Dmitry Fadeyev: http://lesselements.com
+
+// text replacement - newer style. Hat tip: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.textreplace(@width, @height, @colour: transparent, @img, @imgpos: top left, @imgrepeat: no-repeat) {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: @width;
+  height: @height;
+  background: @colour url(@img) @imgpos @imgrepeat;
+}
+
+// Border Radius
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+//Inner shadows
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @shadowcolor: rgba(0,0,0,0.4)) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
+  box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+      -ms-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+// Transformations
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+     -moz-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+       -o-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+//Scale
+.scale(@ratio:1.5){
+  -webkit-transform:scale(@ratio);
+     -moz-transform:scale(@ratio);
+      -ms-transform:scale(@ratio);
+       -o-transform:scale(@ratio);
+          transform:scale(@ratio);
+}
+
+//Opacity
+.opacity(@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+   -khtml-opacity: @opacity;
+  	 -moz-opacity: @opacity;
+    	  opacity: @opacity;
+}
+
+//CSS columns
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
+//Translation
+.translate(@x:0, @y:0) {
+  -moz-transform: translate(@x, @y);
+  -webkit-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
