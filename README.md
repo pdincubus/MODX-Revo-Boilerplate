@@ -51,6 +51,9 @@ Contains most things that were pulled out of the stock Articles templates but ar
 
 Install the FormIt extra, and with these two simple chunks you can easily drop a working contact form on any page with little to no customisation required.
 
+###wf.rowTpl
+
+Wayfinder's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.
 
 ##Snippets
 
