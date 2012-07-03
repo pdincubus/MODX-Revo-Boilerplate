@@ -1,56 +1,58 @@
-[[+preview]]
-<span class="quip-success" id="quip-success-[[+idprefix]]">[[+successMsg]]</span>
-
-<form id="quip-add-comment-[[+idprefix]]" action="[[+url]]#quip-comment-preview-box-[[+idprefix]]" method="post">
+<form id="quip-add-comment-[[+idprefix]]" action="[[+url]]#quip-add-comment-[[+idprefix]]" method="post">
+    [[+successMsg:notempty=`<p id=quip-success-[[+idprefix]]>[[+successMsg]]</p>`]]
+    [[+preview]]
+    
 	<fieldset>
-		<input type="hidden" name="nospam" value="" />
-		<input type="hidden" name="thread" value="[[+thread]]" />
-		<input type="hidden" name="parent" value="[[+parent]]" />
-		<input type="hidden" name="auth_nonce" value="[[+auth_nonce]]" />
-		<input type="hidden" name="preview_mode" value="[[+preview_mode]]" />
+		<input type="hidden" name="nospam" value="">
+		<input type="hidden" name="thread" value="[[+thread]]">
+		<input type="hidden" name="parent" value="[[+parent]]">
+		<input type="hidden" name="auth_nonce" value="[[+auth_nonce]]">
+		<input type="hidden" name="preview_mode" value="[[+preview_mode]]">
 	
-		<p class="errors">
-			<span class="quip-error">[[+error.name]]</span>
-			<span class="quip-error">[[+error.email]]</span>
-			<span class="quip-error">[[+error.website]]</span>
-			<span class="quip-error">[[+error.notify]]</span>
-			<span class="quip-error">[[+error.recaptcha]]</span>
-			<span class="quip-error">[[+error.comment]]</span>
-		</p>
+		[[+error:notempty=`<ul class="errors">
+			[[+error.name:notempty=`<li>[[+error.name]]</li>`]]
+			[[+error.email:notempty=`<li>[[+error.email]]</li>`]]
+			[[+error.website:notempty=`<li>[[+error.website]]</li>`]]
+			[[+error.notify:notempty=`<li>[[+error.notify]]</li>`]]
+			[[+error.recaptcha:notempty=`<li>[[+error.recaptcha]]</li>`]]
+			[[+error.comment:notempty=`<li>[[+error.comment]]</li>`]]
+		</ul>`]]
 	
-		 <p class="quip-fld">
+		 <p>
 			<label for="quip-comment-name-[[+idprefix]]">[[%quip.name? &namespace=`quip` &topic=`default`]]</label>
 			<input type="text" name="name" id="quip-comment-name-[[+idprefix]]" value="[[+name]]" placeholder="Name">
 		</p>
 		
-		<p class="quip-fld">
+		<p>
 			<label for="quip-comment-email-[[+idprefix]]">[[%quip.email]]</label>
 			<input type="text" name="email" id="quip-comment-email-[[+idprefix]]" value="[[+email]]" placeholder="Email Address">
 		</p>
 		
-		<p class="quip-fld">
+		<p>
 			<label for="quip-comment-website-[[+idprefix]]">[[%quip.website]]</label>
 			<input type="text" name="website" id="quip-comment-website-[[+idprefix]]" value="[[+website]]" placeholder="Website">
 		</p>
 	
-		<p class="quip-fld">
+		<p>
 			[[+unsubscribe:default=`
 			<input type="checkbox" value="1" name="notify" id="quip-comment-notify-[[+idprefix]]" [[+notifyChecked]]>
             <label for="quip-comment-notify-[[+idprefix]]" id="notify">[[%quip.notify_me]]</label>
 			`]]
 		</p>
-	
-		<p class="quip-fld recaptcha">
+	    
+        [[+quip.recaptcha_html:notempty=`
+		<p class="recaptcha">
 			[[+quip.recaptcha_html]]
 		</p>
-		
+		`]]
+        
 		<p>
 			<label for="quip-comment-box-[[+idprefix]]">[[%quip.comment_add_new]]</label>
 			<textarea name="comment" id="quip-comment-box-[[+idprefix]]" rows="5" placeholder="Comment">[[+comment]]</textarea>
 		</p>
         
         <p>
-            <small><span class="quip-allowed-tags">[[%quip.allowed_tags? &tags=`[[++quip.allowed_tags:htmlent]]`]]</span></small>
+            <small>[[%quip.allowed_tags? &tags=`[[++quip.allowed_tags:htmlent]]`]]</small>
         </p>
 		
 		<button type="submit" name="[[+preview_action]]" value="1">[[%quip.preview]]</button>
