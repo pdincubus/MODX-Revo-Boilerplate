@@ -18,9 +18,18 @@ For sites using Articles, you'll definitely want new templates for the layout in
 
 ##Assets
 
+Assets should usually be put in /assets/templates/{TEMPLATEFOLDERNAME}, e.g:
+
+* CSS/LESS/Behaviour files: /assets/templates/{TEMPLATEFOLDERNAME}/css
+* All javascript libraries, jQuery, Modernizr, etc: /assets/templates/{TEMPLATEFOLDERNAME}/js
+* All images related to your template layout: /assets/templates/{TEMPLATEFOLDERNAME}/img
+* etc.
+
+The templates and chunks in this repository assume you've put these files in the same place. If not, make sure you update the relevant paths.
+
 ###CSS
 
-I use LESS just about all the time. The files in here can be put straight into /assets/templates/{TEMPLATEFOLDERNAME}
+I use LESS just about all the time.
 
 Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box bos-sizing method, clearfixes, classes, and basic print styles. 
 
