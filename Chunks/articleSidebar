@@ -1,7 +1,9 @@
 <aside>    
     <h3>Latest Posts</h3>
     <ul>
-        [[+latest_posts]]
+        [[+latest_posts:default=`
+        <li>No posts yet!</li>
+        `]]
     </ul>
 
     [[+comments_enabled:is=`1`:then=`
@@ -13,12 +15,16 @@
 
     <h3>Tags</h3>
     <ul>
-        [[+tags]]
+        [[+tags:default=`
+        <li>No tags yet!</li>
+        `]]
     </ul>
 
     <h3>Archives</h3>
     <ul>
-        [[+archives]]
+        [[+archives:default=`
+        <li>No posts yet!</li>
+        `]]
     </ul>
     
     <form id="quick-search" action="search-results.html" method="get">
@@ -29,3 +35,4 @@
         </p>
     </form>
 </aside>
+
