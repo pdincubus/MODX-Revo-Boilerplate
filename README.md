@@ -123,6 +123,14 @@ I generally use the following extras most of the time:
 * Wayfinder. Makes menus easy.
 
 
+##Transport Package
+
+This is *untested*. Be careful, the sky may fall down. I've included all the above mentioned extras as part of this as well as all the custom snippets, chunks and templates. 
+
+Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
+
+Then install in the usual way once the package is detected.
+
 ##Additional
 
 Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
