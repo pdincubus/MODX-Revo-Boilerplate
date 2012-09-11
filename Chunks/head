@@ -11,7 +11,7 @@
     <meta name="description" content="[[*description]]">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
-    <script src="/assets/templates/[[+template]]/js/vendor/modernizr-2.5.3.min.js"></script>
+    <script src="/assets/templates/[[+template]]/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
     <header class="cf">
