@@ -31,7 +31,7 @@ The templates and chunks in this repository assume you've put these files in the
 
 I use LESS just about all the time.
 
-Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box bos-sizing method, clearfixes, classes, and basic print styles. 
+Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method, clearfixes, classes, and basic print styles. 
 
 ###js
 
