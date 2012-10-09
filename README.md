@@ -74,7 +74,6 @@ See above.
 
 
 
-
 ##Snippets
 
 ###copyYears
@@ -109,7 +108,7 @@ You can pretty much do what you want in this file, but point out developer, desi
 
 I generally use the following extras most of the time:
 
-* Ace (code editor). A lot better than CodeMirror
+* Ace (code editor). <del>A lot better than CodeMirror</del>. The new version of CodeMirror is a lot better than the previous one. So either of these are decent. CodeMirror also has the option for colour schemes for syntax highlighting.
 * Articles. This in turn installs a load of extras it needs
 * Big Brother. A Google Analytics dashboard widget.
 * FormIt. For form sending/validation, etc
