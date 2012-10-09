@@ -1,19 +1,57 @@
+/*----------------------------------------------------
+*      normalise, classes, fonts and colours
+*----------------------------------------------------*/
+
 //base normalize from h5bp.com - also sets box-sizing to border-box universally - change if you hate that.
 @import "normalize.css";
 
 //pull in useful classes for text-replacements, etc.
 @import "classes.less";
 
-//all the lovely global colours and fonts
+//colours and fonts
 @import "colours-and-fonts.less";
 
-//main styles
+/*----------------------------------------------------
+*               main styles
+*----------------------------------------------------*/
 
-/*put your styles here*/
+//main css here
 
-//mobile styles, ipad, iphone, etc
+/*----------------------------------------------------
+*            iPhone and smart phones
+*----------------------------------------------------*/
 
-/*put your mobile and small form factor css here*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	
+}
 
-//print basics and clearfixes, etc.
+/*----------------------------------------------------
+*                   iPad portrait
+*----------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	
+}
+
+/*----------------------------------------------------
+*            iPad landscape, small desktop
+*----------------------------------------------------*/
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+	
+}
+
+/*----------------------------------------------------
+*         high resolution device adjustments
+*----------------------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+	
+}
+
+/*----------------------------------------------------
+*           print, helper classes, etc
+*----------------------------------------------------*/
+
 @import "other.css";
