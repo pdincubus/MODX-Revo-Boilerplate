@@ -35,7 +35,7 @@ Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explo
 
 ###js
 
-Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes jQuery 1.7.2 for fallback should the CDN download fail, and jQuery Easing for nicer animations.
+Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
 
 
 ##Chunks
