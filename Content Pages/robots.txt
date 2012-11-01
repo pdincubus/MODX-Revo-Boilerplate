@@ -4,4 +4,4 @@ Disallow: /manager/
 Disallow: /build/
 Disallow: /connectors/
 Disallow: /core/
-Sitemap: http://{SITE_URL}/sitemap.xml
+Sitemap: [[++site_url]]sitemap.xml
