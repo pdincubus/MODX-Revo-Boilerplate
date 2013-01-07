@@ -1,19 +1,19 @@
 <li class="[[+cls]] cf" id="[[+idprefix]][[+id]]" [[+depth_margin:notempty=`style="padding-left: [[+depth_margin]]px"`]]>	
-		[[+gravatarUrl:notempty=`<img src="[[+gravatarUrl]]" class="quip-avatar" alt="">`]]
+	[[+gravatarUrl:notempty=`<img src="[[+gravatarUrl]]" class="quip-avatar" alt="">`]]
 	
-		<div class="quip-comment-meta">
-			[[+authorName]]<br>
-			<a href="[[+url]]">[[+createdon]]</a>
-			[[+approved:if=`[[+approved]]`:is=`1`:then=``:else=`- <em>[[%quip.unapproved? &namespace=`quip` &topic=`default`]]</em>`]]
-		</div>
+	<div class="quip-comment-meta">
+		[[+authorName]]<br>
+		<a href="[[+url]]">[[+createdon]]</a>
+		[[+approved:if=`[[+approved]]`:is=`1`:then=``:else=`- <em>[[%quip.unapproved? &namespace=`quip` &topic=`default`]]</em>`]]
+	</div>
 	
-		<div class="quip-comment-text">
-			<p>[[+body]]</p>
-			[[+replyUrl:notempty=`<p><a href="[[+replyUrl]]">[[%quip.reply? &namespace=`quip` &topic=`default`]]</a></p>`]]
-		</div>
+	<div class="quip-comment-text">
+		<p>[[+body]]</p>
+		[[+replyUrl:notempty=`<p><a href="[[+replyUrl]]">[[%quip.reply? &namespace=`quip` &topic=`default`]]</a></p>`]]
+	</div>
 	
-		<div class="quip-comment-options">
-			[[+report]]
-			[[+options]]
-		</div>
+	<div class="quip-comment-options">
+		[[+report]]
+		[[+options]]
+	</div>
 </li>
