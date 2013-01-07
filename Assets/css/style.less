@@ -2,14 +2,20 @@
 *      normalise, classes, fonts and colours
 *----------------------------------------------------*/
 
-//base normalize from h5bp.com - also sets box-sizing to border-box universally - change if you hate that.
+//base normalize from h5bp.com
 @import "normalize.css";
 
-//pull in useful classes for text-replacements, etc.
+//pull in useful LESS classes for text-replacements, etc.
 @import "classes.less";
 
 //colours and fonts
 @import "colours-and-fonts.less";
+
+//print, helper classes, etc
+@import "other.css";
+
+//sort out box-sizing. doesn't work in IE, thus the behaviour file. The behaviour file also has some issues but for the most part works. If you prefer old school width+padding+border= width, remove this line
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/{TEMPLATE_FOLDER_NAME}/css/boxsizing.htc); }
 
 /*----------------------------------------------------
 *               main styles
@@ -50,9 +56,3 @@
 	//warning: this doesn't seem to compile
     //remove unless necessary, or maybe include in an @import
 }
-
-/*----------------------------------------------------
-*           print, helper classes, etc
-*----------------------------------------------------*/
-
-@import "other.css";
