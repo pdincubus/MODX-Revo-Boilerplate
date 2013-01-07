@@ -1,5 +1,5 @@
         <footer>
-            <p>&copy; [[!copyYears?startYear=`2012`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
+            <p>&copy; [[!copyYears?startYear=`2013`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
         </footer>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
