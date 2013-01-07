@@ -1,0 +1,4 @@
+<li>
+    <p><a href="[[+link:is=``:then=`[[~[[+id]]]]`:else=`[[+link]]`]]" title="[[+longtitle]]">[[+pagetitle]]</a></p>
+    <p>[[+extract]]</p>
+</li>

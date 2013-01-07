@@ -27,11 +27,5 @@
         `]]
     </ul>
     
-    <form id="quick-search" action="search-results.html" method="get">
-        <p>
-            <label for="qsearch">Search</label>
-            <input id="qsearch" type="text" name="search" placeholder="Enter search terms">
-            <button type="submit">Go</button>
-        </p>
-    </form>
+    [[SimpleSearchForm? &tpl=`SimpleSearchFormCustom` &landing=`{ID_OF_SEARCH_RESULTS_LANDING_PAGE}`]]
 </aside>
