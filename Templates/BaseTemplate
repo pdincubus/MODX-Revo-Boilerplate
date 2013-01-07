@@ -1,4 +1,4 @@
-[[$head? &bodyClass=`[[getResourceField? &id=`[[UltimateParent]]` &field=`link_attributes`]]` &template=`{TEMPLATE_FOLDER_NAME}`]]
+[[$head? &bodyClass=`[[getResourceField? &id=`[[UltimateParent]]` &field=`link_attributes`]]` &template=`{TEMPLATE_FOLDER_NAME}` &websiteType=`website`]]
 
 <div id="main" class="cf">
 
