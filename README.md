@@ -112,6 +112,7 @@ I generally use the following extras most of the time:
 * Articles. This in turn installs a load of extras it needs
 * Big Brother. A Google Analytics dashboard widget.
 * FormIt. For form sending/validation, etc
+* getRelated. Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
 * getResourceField. Useful for grabbing one bit of data from one single page. Kind of get resources, but blinkered.
 * getResources. Useful for all kinds of things.
 * GoogleSiteMap. Generates XML sitemaps for Spiders, etc
@@ -124,7 +125,11 @@ I generally use the following extras most of the time:
 
 ##Transport Package
 
-This is *untested*. Be careful, the sky may fall down. I've included all the above mentioned extras as part of this as well as all the custom snippets, chunks and templates. 
+This is *untested*. Be careful, the sky may fall down.
+
+If you *only* want the snippets, chunks, assets and templates - use the default package. 
+
+If you want the *full* package - install the "subpackages" transport package. This includes many of the above mentioned extras rolled in.
 
 Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
 
