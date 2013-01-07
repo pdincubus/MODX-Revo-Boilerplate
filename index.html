@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Modx-revo-boilerplate by pdincubus</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Modx-revo-boilerplate</h1>
+        <p>MODX Revolution Basic Template Boilerplate</p>
+
+        <p class="view"><a href="https://github.com/pdincubus/MODX-Revo-Boilerplate">View the Project on GitHub <small>pdincubus/MODX-Revo-Boilerplate</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pdincubus/MODX-Revo-Boilerplate/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pdincubus/MODX-Revo-Boilerplate/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pdincubus/MODX-Revo-Boilerplate">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>MODX Revolution Boilerplate basics</h1>
+
+<p>A bunch of stuff to quickly get some sensible basics into a new <a href="http://modx.com/">MODX Revolution</a> install. There's a folder for each type of resource. Simply make a new resource of that particular type and copy in the code.</p>
+
+<p>I'll probably try and set up a transport package for this at some point to make it even easier to use.</p>
+
+<h2>Templates</h2>
+
+<h3>BaseTemplate</h3>
+
+<p>Used by default in MODX, very basic HTML structure. Pulls in a head and foot chunk.</p>
+
+<h3>Article &amp; ArticleContainer</h3>
+
+<p>For sites using Articles, you'll definitely want new templates for the layout in that section. These two templates have sane defaults and ensures all repeated code is pulled out into head, foot &amp; articleSidebar chunks.</p>
+
+<h2>Assets</h2>
+
+<p>Assets should usually be put in /assets/templates/{TEMPLATEFOLDERNAME}, e.g:</p>
+
+<ul>
+<li>CSS/LESS/Behaviour files: /assets/templates/{TEMPLATEFOLDERNAME}/css</li>
+<li>All javascript libraries, jQuery, Modernizr, etc: /assets/templates/{TEMPLATEFOLDERNAME}/js</li>
+<li>All images related to your template layout: /assets/templates/{TEMPLATEFOLDERNAME}/img</li>
+<li>etc.</li>
+</ul><p>The templates and chunks in this repository assume you've put these files in the same place. If not, make sure you update the relevant paths.</p>
+
+<h3>CSS</h3>
+
+<p>I use LESS just about all the time.</p>
+
+<p>Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method, clearfixes, classes, and basic print styles. </p>
+
+<h3>js</h3>
+
+<p>Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.</p>
+
+<h2>Chunks</h2>
+
+<h3>head and foot</h3>
+
+<p>Beginning and end of the templates. I've added two placeholders - [[+bodyClass]] and [[+template]].</p>
+
+<p>[[+bodyClass]] is useful for complex sites and when passed into the [[$head]] will add that class name to the body tag. Can help save a bunch of extra templates (sometimes).</p>
+
+<p>[[+template]] help make your [[$head]] &amp; [[$foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.</p>
+
+<h3>standardSidebar</h3>
+
+<p>Chuck everything in here that you would have in your aside. </p>
+
+<h3>articleSidebar</h3>
+
+<p>Contains most things that were pulled out of the stock Articles templates but are repeated on both container and article template. Nicely wrapped in an aside</p>
+
+<h3>contactEmail and contactForm</h3>
+
+<p>Install the FormIt extra, and with these two simple chunks you can easily drop a working contact form on any page with little to no customisation required.</p>
+
+<h3>wf.rowTpl</h3>
+
+<p>Wayfinder's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.</p>
+
+<h3>quipCommentCustom</h3>
+
+<p>Replacement, lovely and trimmed down version of the standard Quip chunk</p>
+
+<h3>quipAddCommentCustom, ArticlesLatestPostTpl, ArchiveGroupByYear, ArticleRowTpl</h3>
+
+<p>See above.</p>
+
+<h2>Snippets</h2>
+
+<h3>copyYears</h3>
+
+<p>Works out the copyright for the footer.</p>
+
+<h3>currentUrl</h3>
+
+<p>Clue is in the name</p>
+
+<h3>formatSearchUrl</h3>
+
+<p>Some preformatting for passing to the SimpleSearch on the Page Not Found error page.</p>
+
+<h2>Content Pages</h2>
+
+<h3>Page Not Found</h3>
+
+<p>Requires SimpleSearch extra, formatSearchUrl and currentUrl snippets. Does a lookup for what page you tried to access and shows results in a list (if any).</p>
+
+<h3>robots.txt</h3>
+
+<p>Disallows access to a bunch of MODX folders to SpiderBotMonkeys. Also points out the URL of the sitemap (edit this to your URL). You'll need to install the GoogleSiteMap extra to make the sitemap.xml file</p>
+
+<h3>humans.txt</h3>
+
+<p>You can pretty much do what you want in this file, but point out developer, designer, technology used, etc.</p>
+
+<h2>Extras</h2>
+
+<p>I generally use the following extras most of the time:</p>
+
+<ul>
+<li>Ace (code editor). <del>A lot better than CodeMirror</del>. The new version of CodeMirror is a lot better than the previous one. So either of these are decent. CodeMirror also has the option for colour schemes for syntax highlighting.</li>
+<li>Articles. This in turn installs a load of extras it needs</li>
+<li>Big Brother. A Google Analytics dashboard widget.</li>
+<li>FormIt. For form sending/validation, etc</li>
+<li>getResourceField. Useful for grabbing one bit of data from one single page. Kind of get resources, but blinkered.</li>
+<li>getResources. Useful for all kinds of things.</li>
+<li>GoogleSiteMap. Generates XML sitemaps for Spiders, etc</li>
+<li>
+<a href="http://modx.com/extras/package/jsonderulo23">JSONDerulo</a>. Pulls in and outputs JSON feeds for common social feeds.</li>
+<li>phpThumbOf. Crop, thumbnail and alter images automagically.</li>
+<li>SimpleSearch. For use on the Page Not Found error page.</li>
+<li>UltimateParent. Searches up branches to find parent pages at a chosen level. I use this for the bodyClass placeholder mostly.</li>
+<li>Wayfinder. Makes menus easy.</li>
+</ul><h2>Transport Package</h2>
+
+<p>This is <em>untested</em>. Be careful, the sky may fall down. I've included all the above mentioned extras as part of this as well as all the custom snippets, chunks and templates. </p>
+
+<p>Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".</p>
+
+<p>Then install in the usual way once the package is detected.</p>
+
+<h2>Additional</h2>
+
+<p>Thanks (as usual) to <a href="https://github.com/johnnoel">Mister John</a> for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pdincubus">pdincubus</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
