@@ -2,8 +2,11 @@
 
 A bunch of stuff to quickly get some sensible basics into a new [MODX Revolution](http://modx.com/) install. There's a folder for each type of resource. Simply make a new resource of that particular type and copy in the code.
 
-I'll probably try and set up a transport package for this at some point to make it even easier to use.
+Now available on the MODX Extras repo
 
+[MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
+
+[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)
 
 ##Templates
 
