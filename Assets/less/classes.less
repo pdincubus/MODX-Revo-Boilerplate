@@ -118,3 +118,41 @@
 	column-rule-style: @columnRuleStyle;
 	column-rule-width: @columnRuleWidth;
 }
+
+
+/*
+*    Stolen from: http://minimalmonkey.com/sass-triangle-mixin/
+*    and kind of converted for LESS
+*/
+
+.arrow-up(@width: 20px, @height: 20px, @color: #000) {
+	border-left: @width/2 solid transparent;
+	border-right: @width/2 solid transparent;
+	border-bottom: @height solid @color;
+	width: 0;
+	height: 0;
+}
+
+.arrow-down(@width: 20px, @height: 20px, @color: #000) {
+	border-left: @width/2 solid transparent;
+	border-right: @width/2 solid transparent;
+	border-top: @height solid @color;
+	width: 0;
+	height: 0;
+}
+
+.arrow-left(@width: 20px, @height: 20px, @color: #000) {
+	border-top: @height/2 solid transparent;
+	border-bottom: @height/2 solid transparent;
+	border-right: @width solid @color;
+	width: 0;
+	height: 0;
+}
+
+.arrow-right(@width: 20px, @height: 20px, @color: #000) {
+	border-top: @height/2 solid transparent;
+	border-bottom: @height/2 solid transparent;
+	border-left: @width solid @color;
+	width: 0;
+	height: 0;
+}
