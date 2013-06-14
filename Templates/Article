@@ -20,8 +20,8 @@
             [[+comments_form]]
         </section>
     </article>
-    
-    [[$articleSidebar]]
+
+    [[$article-sidebar]]
 </div>
 
 [[$foot? &template=`{TEMPLATE_FOLDER_NAME}`]]

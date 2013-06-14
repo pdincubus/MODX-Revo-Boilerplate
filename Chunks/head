@@ -10,7 +10,7 @@
     <base href="[[++site_url]]">
     <meta name="description" content="[[*description]]">
     <meta name="viewport" content="width=device-width">
-    
+
     <!--facebook open graph stuff -->
     <meta property="og:site_name" content="[[++site_name]]">
     <meta property="og:title" content="[[*pagetitle:escape]]">
@@ -19,19 +19,19 @@
     <meta property="og:image" content="{URL_TO_IMAGE}">
     [[+websiteType:eq=`article`:then=`<meta property="article:published_time" content="[[*publishedon]]">`]]
     <!--//end facebook open graph stuff-->
-    
+
     <meta name="google-site-verification" content="{VERIFICATION_CODE}">
     <meta name="msvalidate.01" content="{VERIFICATION_CODE}">
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
-    <script src="/assets/templates/[[+template]]/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
     <header class="cf" id="top">
         <a href="/" id="logo">[[++site_name]]</a>
-        
+
         <nav>
             [[Wayfinder? &startId=`0` &level=`1` &rowTpl=`wf.rowTpl`]]
         </nav>
     </header>
-    
+

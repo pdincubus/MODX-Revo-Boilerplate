@@ -4,8 +4,8 @@
 
    	<h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
     [[*content]]
-    
-    [[$articleSidebar]]
+
+    [[$article-sidebar]]
 </div>
 
 [[$foot? &template=`{TEMPLATE_FOLDER_NAME}`]]

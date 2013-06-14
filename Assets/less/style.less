@@ -1,61 +1,35 @@
 /*----------------------------------------------------
 *      normalise, classes, fonts and colours
 *----------------------------------------------------*/
-
-//base normalize from h5bp.com
-@import "normalize.less";
+//combo of reset and normalize
+@import url(base/resetalize.less);
+//or if you prefer HTML5BP normalize, use this instead:
+//@import url(base/normalize.less);
 
 //pull in useful LESS classes for text-replacements, etc.
-@import "classes.less";
-
-//colours and fonts
-@import "colours-and-fonts.less";
+@import url(base/classes.less);
 
 //helper classes
-@import "helpers.less";
+@import url(base/helpers.less);
 
 //print styles
-@import "print.less";
+@import url(base/print.less);
 
 //sort out box-sizing. doesn't work in IE, thus the behaviour file. The behaviour file also has some issues but for the most part works. If you prefer old school width+padding+border= width, remove this line
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/{TEMPLATE_FOLDER_NAME}/css/boxsizing.htc); }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/{TEMPLATE_FOLDER_NAME}/js/lib/boxsizing.htc); }
 
 /*----------------------------------------------------
 *               main styles
 *----------------------------------------------------*/
+//your base colours, fonts, typography
+@import url(colours-and-typography.less);
 
 //main css here
 
 /*----------------------------------------------------
-*            iPhone and smart phones
+*               mobile, tablet, hi-dpi
 *----------------------------------------------------*/
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-
-}
-
-/*----------------------------------------------------
-*                   iPad portrait
-*----------------------------------------------------*/
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-
-}
-
-/*----------------------------------------------------
-*            iPad landscape, small desktop
-*----------------------------------------------------*/
-
-@media only screen and (min-width: 769px) and (max-width: 1025px) {
-
-}
-
-/*----------------------------------------------------
-*         high resolution device adjustments
-*----------------------------------------------------*/
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    //warning: this doesn't seem to compile
-    //remove unless necessary, or maybe include in an @import
-}
+@import url(mobile.less);
+@import url(tablet.less);
+@import url(small-desktop.less);
+@import url(hi-dpi.less);

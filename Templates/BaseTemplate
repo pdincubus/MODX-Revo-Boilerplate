@@ -6,8 +6,8 @@
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
         [[*content]]
     </article>
-    
-    [[$standardSidebar]]
+
+    [[$standard-sidebar]]
 
 </div>
 
