@@ -123,7 +123,7 @@ I generally use the following extras most of the time:
 * getResourceField. Useful for grabbing one bit of data from one single page. Kind of get resources, but blinkered.
 * getResources. Useful for all kinds of things.
 * GoogleSiteMap. Generates XML sitemaps for Spiders, etc
-* [JSONDerulo](http://modx.com/extras/package/jsonderulo23). Pulls in and outputs JSON feeds for common social feeds.
+* [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
 * phpThumbOf. Crop, thumbnail and alter images automagically.
 * SimpleSearch. For use on the Page Not Found error page.
 * UltimateParent. Searches up branches to find parent pages at a chosen level. I use this for the bodyClass placeholder mostly.
