@@ -1,4 +1,4 @@
-<aside>    
+<aside>
     <h3>Latest Posts</h3>
     <ul>
         [[+latest_posts:default=`
@@ -10,7 +10,7 @@
     <h3>Latest Comments</h3>
     <ul>
         [[+latest_comments]]
-    </ul>    
+    </ul>
     `]]
 
     <h3>Tags</h3>
@@ -26,6 +26,6 @@
         <li>No posts yet!</li>
         `]]
     </ul>
-    
-    [[SimpleSearchForm? &tpl=`SimpleSearchFormCustom` &landing=`{ID_OF_SEARCH_RESULTS_LANDING_PAGE}`]]
+
+    [[SimpleSearchForm? &tpl=`ss.form` &landing=`{ID_OF_SEARCH_RESULTS_LANDING_PAGE}`]]
 </aside>

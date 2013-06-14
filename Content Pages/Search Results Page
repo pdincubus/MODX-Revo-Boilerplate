@@ -1,1 +1,1 @@
-[[!SimpleSearch? &tpl=`SimpleSearchResultItem` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`SimpleSearchResultContainer`]]
+[[!SimpleSearch? &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]
