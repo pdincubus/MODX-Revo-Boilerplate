@@ -3,5 +3,11 @@ For all info: https://github.com/pdincubus/MODX-Revo-Boilerplate/
 Most recent additions
 ---------------------
 
+1.0
+    * Renamed most chunks to make it a bit more logcial
+    * updates to jQuery versions
+    * Added new style Google analytics code to [{$foot]]
+    * Refactored LESS directories and config
+
 0.9b
-	* Updated a bunch of everything. New test transport package
+    * Updated a bunch of everything. New test transport package

@@ -23,8 +23,10 @@ For sites using Articles, you'll definitely want new templates for the layout in
 
 Assets should usually be put in /assets/templates/{TEMPLATEFOLDERNAME}, e.g:
 
-* CSS/LESS/Behaviour files: /assets/templates/{TEMPLATEFOLDERNAME}/css
-* All javascript libraries, jQuery, Modernizr, etc: /assets/templates/{TEMPLATEFOLDERNAME}/js
+* CSS: /assets/templates/{TEMPLATEFOLDERNAME}/css
+* LESS: /assets/templates/{TEMPLATEFOLDERNAME}/less
+* All javascript libraries, jQuery, Modernizr, etc: /assets/templates/{TEMPLATEFOLDERNAME}/js/lib
+* All your custom js files: /assets/templates/{TEMPLATEFOLDERNAME}/js
 * All images related to your template layout: /assets/templates/{TEMPLATEFOLDERNAME}/img
 * etc.
 
@@ -34,11 +36,13 @@ The templates and chunks in this repository assume you've put these files in the
 
 I use LESS just about all the time.
 
-Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method, clearfixes, classes, and basic print styles. 
+Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method, clearfixes, classes, and basic print styles.
 
 ###js
 
 Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
+
+Selectivizr is also in there for those who want its functionality to support older versions of *cough* Internet Explorer.
 
 
 ##Chunks
@@ -51,27 +55,27 @@ Beginning and end of the templates. I've added two placeholders - [[+bodyClass]]
 
 [[+template]] help make your [[$head]] & [[$foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.
 
-###standardSidebar
+###standard-sidebar
 
-Chuck everything in here that you would have in your aside. 
+Chuck everything in here that you would have in your aside.
 
-###articleSidebar
+###article-sidebar
 
 Contains most things that were pulled out of the stock Articles templates but are repeated on both container and article template. Nicely wrapped in an aside
 
-###contactEmail and contactForm
+###fi.contact-email and fi.contact-form
 
 Install the FormIt extra, and with these two simple chunks you can easily drop a working contact form on any page with little to no customisation required.
 
-###wf.rowTpl
+###wf.row-tpl
 
 Wayfinder's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.
 
-###quipCommentCustom
+###quip.comment
 
 Replacement, lovely and trimmed down version of the standard Quip chunk
 
-###quipAddCommentCustom, ArticlesLatestPostTpl, ArchiveGroupByYear, ArticleRowTpl
+###quip.add-comment, articles-lLatest-post-tpl, archive-group-by-year, article-row-tpl
 
 See above.
 
@@ -130,12 +134,12 @@ I generally use the following extras most of the time:
 
 This is *untested*. Be careful, the sky may fall down.
 
-* If you *only* want the snippets, chunks, assets and templates - use the default package. 
+* If you *only* want the snippets, chunks, assets and templates - use the default package.
 * If you want the *full* package - install the "subpackages" transport package. This includes many of the above mentioned extras rolled in.
 
 Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
 
-You _need_ to remember to _change_ the SimpleSearch "landing page" id, as well as things for FormIt in the contactForm chunk.
+You _need_ to remember to _change_ the SimpleSearch "landing page" id, as well as things for FormIt in the fi.contact-form chunk.
 
 Then install in the usual way once the package is detected.
 
