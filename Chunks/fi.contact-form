@@ -1,6 +1,6 @@
 [[!FormIt?
    &hooks=`fiProcessArrays,email,redirect`
-   &emailTpl=`contactEmail`
+   &emailTpl=`fi.contact-email`
    &emailTo=`{EMAIL_ADDRESS}`
    &emailSubject=`Contact from [[++site_name]]`
    &emailFromName=`[[++site_name]]`

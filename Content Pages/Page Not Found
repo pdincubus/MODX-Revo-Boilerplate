@@ -5,4 +5,4 @@
 
 <h2>Possible matches for ‘[[!currentUrl]]’</h2>
 [[!formatSearchUrl? &requestIndex=`urlSearch`]]
-[[!SimpleSearch? &searchIndex=`urlSearch` &perPage=`5`]]
+[[!SimpleSearch? &searchIndex=`urlSearch` &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]

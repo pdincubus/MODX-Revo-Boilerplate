@@ -21,7 +21,7 @@
         </section>
     </article>
 
-    [[$article-sidebar]]
+    [[$articles.sidebar]]
 </div>
 
 [[$foot? &template=`{TEMPLATE_FOLDER_NAME}`]]
