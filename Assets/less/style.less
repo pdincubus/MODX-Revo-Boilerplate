@@ -1,6 +1,6 @@
-/*----------------------------------------------------
-*      normalise, classes, fonts and colours
-*----------------------------------------------------*/
+//----------------------------------------------------
+//      normalise, classes, fonts and colours
+//----------------------------------------------------
 //combo of reset and normalize
 @import url(base/resetalize.less);
 //or if you prefer HTML5BP normalize, use this instead:
@@ -18,17 +18,17 @@
 //sort out box-sizing. doesn't work in IE, thus the behaviour file. The behaviour file also has some issues but for the most part works. If you prefer old school width+padding+border= width, remove this line
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/{TEMPLATE_FOLDER_NAME}/js/lib/boxsizing.htc); }
 
-/*----------------------------------------------------
-*               main styles
-*----------------------------------------------------*/
+//----------------------------------------------------
+//               main styles
+//----------------------------------------------------
 //your base colours, fonts, typography
 @import url(colours-and-typography.less);
 
 //main css here
 
-/*----------------------------------------------------
-*               mobile, tablet, hi-dpi
-*----------------------------------------------------*/
+//----------------------------------------------------
+//               mobile, tablet, hi-dpi
+//----------------------------------------------------
 @import url(mobile.less);
 @import url(tablet.less);
 @import url(small-desktop.less);

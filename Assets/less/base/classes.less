@@ -1,15 +1,16 @@
-/*------------------------------------------------------------------------------
-*       class definitions.
-*       some stolen from LESS Elements 0.6
-*       by Dmitry Fadeyev
-*       http://lesselements.com
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       class definitions.
+//       some stolen from LESS Elements 0.6
+//       by Dmitry Fadeyev
+//       http://lesselements.com
+//-----------------------------------------------------------------------------
 
-/*------------------------------------------------------------------------------
-*       text replacement - newer style.
-*       Hat tip: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-*       split apart the background statement and added "display" as an option to allow inline-block, etc
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       text replacement - newer style.
+//       Hat tip: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+//       split apart the background statement and added "display"
+//       as an option to allow inline-block, etc
+//-----------------------------------------------------------------------------
 .imgreplace(@width, @height, @colour: transparent, @img, @imgpos: top left, @imgrepeat: no-repeat, @display: block) {
     display: @display;
     text-indent: 100%;
@@ -23,9 +24,9 @@
     background-repeat: @imgrepeat;
 }
 
-/*------------------------------------------------------------------------------
-*       sizing shortcuts
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       sizing shortcuts
+//-----------------------------------------------------------------------------
 .size(@width, @height) {
     width: @width;
     height: @height;
@@ -35,9 +36,39 @@
     .size(@size, @size);
 }
 
-/*------------------------------------------------------------------------------
-*       placeholder text
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       John's super duper alignment thingy
+//
+//       child elements under whatever you set this on should probably
+//       have something like this set on them:
+//
+//           vertical-align: top;
+//           display: inline-block;
+//           text-align: left;
+//
+//       or use the .justify-children() class
+//-----------------------------------------------------------------------------
+
+.justify() {
+    text-align: justify;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%
+        height: 1px;
+    }
+}
+
+.justify-children() {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+
+//------------------------------------------------------------------------------
+//       placeholder text
+//-----------------------------------------------------------------------------*
 .placeholder(@color: @placeholderText) {
     &:-moz-placeholder {
         color: @color;
@@ -52,9 +83,9 @@
     }
 }
 
-/*------------------------------------------------------------------------------
-*       background sizing
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       background sizing
+//-----------------------------------------------------------------------------
 .background-size(@size) {
     -webkit-background-size: @size;
     -moz-background-size: @size;
@@ -62,9 +93,9 @@
     background-size: @size;
 }
 
-/*------------------------------------------------------------------------------
-*       user select - For selecting text on the page
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       user select - For selecting text on the page
+//-----------------------------------------------------------------------------
 .user-select(@select) {
     -webkit-user-select: @select;
     -moz-user-select: @select;
@@ -73,18 +104,18 @@
     user-select: @select;
 }
 
-/*------------------------------------------------------------------------------
-*       border radius
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       border radius
+//-----------------------------------------------------------------------------
 .border-radius(@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
     border-radius: @radius;
 }
 
-/*------------------------------------------------------------------------------
-*       optional hyphenation
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       optional hyphenation
+//-----------------------------------------------------------------------------
 .hyphens(@mode: auto) {
     word-wrap: break-word;
     -webkit-hyphens: @mode;
@@ -94,9 +125,9 @@
     hyphens: @mode;
 }
 
-/*------------------------------------------------------------------------------
-*       box shadow / inner shadow
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       box shadow / inner shadow
+//-----------------------------------------------------------------------------
 .box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
     -webkit-box-shadow: @shadow;
     -moz-box-shadow: @shadow;
@@ -109,9 +140,9 @@
     box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
 }
 
-/*------------------------------------------------------------------------------
-*       transitions/transformations/scale
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       transitions/transformations/scale
+//-----------------------------------------------------------------------------
 .transition(@transition) {
     -webkit-transition: @transition;
     -moz-transition: @transition;
@@ -144,9 +175,9 @@
     transform:scale(@ratio);
 }
 
-/*------------------------------------------------------------------------------
-*       opacity
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       opacity
+//-----------------------------------------------------------------------------
 .opacity(@opacity: 0.5) {
     -webkit-opacity: @opacity;
     -khtml-opacity: @opacity;
@@ -154,9 +185,9 @@
     opacity: @opacity;
 }
 
-/*------------------------------------------------------------------------------
-*       columns
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//       columns
+//-----------------------------------------------------------------------------
 .columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
     -moz-column-width: @colwidth;
     -moz-column-count: @colcount;
@@ -178,10 +209,10 @@
     column-rule-width: @columnRuleWidth;
 }
 
-/*------------------------------------------------------------------------------
-*         Stolen from: http://minimalmonkey.com/sass-triangle-mixin/
-*         and kind of converted for LESS
-*-----------------------------------------------------------------------------*/
+//------------------------------------------------------------------------------
+//         Stolen from: http://minimalmonkey.com/sass-triangle-mixin/
+//         and kind of converted for LESS
+//-----------------------------------------------------------------------------
 .arrow-up(@width: 20px, @height: 20px, @color: #000) {
     border-left: @width/2 solid transparent;
     border-right: @width/2 solid transparent;
