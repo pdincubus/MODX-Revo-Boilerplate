@@ -55,11 +55,11 @@ Beginning and end of the templates. I've added two placeholders - [[+bodyClass]]
 
 [[+template]] help make your [[$head]] & [[$foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.
 
-###standard-sidebar
+###sidebar
 
 Chuck everything in here that you would have in your aside.
 
-###article-sidebar
+###articles.sidebar
 
 Contains most things that were pulled out of the stock Articles templates but are repeated on both container and article template. Nicely wrapped in an aside
 
@@ -75,10 +75,9 @@ Wayfinder's default setup for outputting a menu item needs a bit of tweaking sin
 
 Replacement, lovely and trimmed down version of the standard Quip chunk
 
-###quip.add-comment, articles-lLatest-post-tpl, archive-group-by-year, article-row-tpl
+###quip.add-comment, articles.latest-post-tpl, articles.archive-group-by-year, articles.article-row-tpl, articles.archive-row
 
 See above.
-
 
 
 ##Snippets
