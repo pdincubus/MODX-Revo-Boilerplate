@@ -2,15 +2,15 @@
             <p>&copy; [[!copyYears?startYear=`2013`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-1.10.2.min.js"><\/script>')</script>
         <!--[if (gte IE 6)&(lte IE 8)]>
           <script type="text/javascript" src="/assets/templates/[[+template]]/js/selectivizr-min.js"></script>
         <![endif]-->
 
         <!-- Don't need to support older browsers? Use jQuery 2 instead, rmove the jQuqery 1.10.lines and selectivizr lines above and uncomment the lines below! -->
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-2.0.2.min.js"><\/script>')</script>-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-2.0.3.min.js"><\/script>')</script>-->
 
         <script src="/assets/templates/[[+template]]/js/lib/plugins.js"></script>
         <script src="/assets/templates/[[+template]]/js/main.js"></script>
