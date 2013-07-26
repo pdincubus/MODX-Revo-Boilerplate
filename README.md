@@ -116,7 +116,7 @@ I generally use the following extras most of the time:
 
 * Ace (code editor). <del>A lot better than CodeMirror</del>. The new version of CodeMirror is a lot better than the previous one. So either of these are decent. CodeMirror also has the option for colour schemes for syntax highlighting.
 * Articles. This in turn installs a load of extras it needs
-* Big Brother. A Google Analytics dashboard widget.
+* <del>Big Brother. A Google Analytics dashboard widget.</del> I've started using Google Analytics Dashboard Widget as it seems that BigBrother is broken for the latest MODX releases.
 * FormIt. For form sending/validation, etc
 * getRelated. Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
 * getResourceField. Useful for grabbing one bit of data from one single page. Kind of get resources, but blinkered.
@@ -126,7 +126,7 @@ I generally use the following extras most of the time:
 * phpThumbOf. Crop, thumbnail and alter images automagically.
 * SimpleSearch. For use on the Page Not Found error page.
 * UltimateParent. Searches up branches to find parent pages at a chosen level. I use this for the bodyClass placeholder mostly.
-* Wayfinder. Makes menus easy.
+* Wayfinder. Makes menus easy. These can also be done with getResources!
 
 
 ##Transport Package
