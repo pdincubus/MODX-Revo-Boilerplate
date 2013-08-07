@@ -128,16 +128,16 @@
 //------------------------------------------------------------------------------
 //       box shadow / inner shadow
 //-----------------------------------------------------------------------------
-.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
-    -webkit-box-shadow: @shadow;
-    -moz-box-shadow: @shadow;
-    box-shadow: @shadow;
+.box-shadow(@horizontal:0, @vertical:1px, @blur:3px, @spread:0, @shadowcolor: rgba(0,0,0,0.4)) {
+    -webkit-box-shadow: @horizontal @vertical @blur @spread @shadowcolor;
+    -moz-box-shadow: @horizontal @vertical @blur @spread @shadowcolor;
+    box-shadow: @horizontal @vertical @blur @spread @shadowcolor;
 }
 
-.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @shadowcolor: rgba(0,0,0,0.4)) {
-    -webkit-box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
-    -moz-box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
-    box-shadow: inset @horizontal @vertical @blur rgba(@shadowcolor);
+.box-shadow-inset(@horizontal:0, @vertical:1px, @blur:3px, @spread:0, @shadowcolor: rgba(0,0,0,0.4)) {
+    -webkit-box-shadow: inset @horizontal @vertical @blur @spread @shadowcolor;
+    -moz-box-shadow: inset @horizontal @vertical @blur @spread @shadowcolor;
+    box-shadow: inset @horizontal @vertical @blur @spread @shadowcolor;
 }
 
 //------------------------------------------------------------------------------
