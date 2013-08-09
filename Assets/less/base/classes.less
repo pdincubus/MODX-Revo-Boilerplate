@@ -51,19 +51,24 @@
 
 .justify() {
     text-align: justify;
+    display: block;
+    height: auto;
 
     &:after {
+        border: 0 none;
         content: "";
         display: inline-block;
-        width: 100%
         height: 1px;
+        width: 100%;
+        position: relative;
     }
 }
 
-.justify-children() {
+.justify-children(@textalign: left) {
+    position: relative;
     vertical-align: top;
     display: inline-block;
-    text-align: left;
+    text-align: @textalign;
 }
 
 //------------------------------------------------------------------------------
