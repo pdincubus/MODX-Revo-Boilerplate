@@ -20,8 +20,11 @@
     [[+websiteType:eq=`article`:then=`<meta property="article:published_time" content="[[*publishedon]]">`]]
     <!--//end facebook open graph stuff-->
 
+    <!--webmaster tools verification ids  -->
     <meta name="google-site-verification" content="{VERIFICATION_CODE}">
     <meta name="msvalidate.01" content="{VERIFICATION_CODE}">
+    <!-- //end webmaster tools verification ids  -->
+
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
     <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.6.2.min.js"></script>
 </head>

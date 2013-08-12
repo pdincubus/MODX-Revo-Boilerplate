@@ -47,19 +47,19 @@ Selectivizr is also in there for those who want its functionality to support old
 
 ##Chunks
 
-###head and foot
+###site.head and site.foot
 
 Beginning and end of the templates. I've added two placeholders - [[+bodyClass]] and [[+template]].
 
 [[+bodyClass]] is useful for complex sites and when passed into the [[$head]] will add that class name to the body tag. Can help save a bunch of extra templates (sometimes).
 
-[[+template]] help make your [[$head]] & [[$foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.
+[[+template]] help make your [[$site.head]] & [[$site.foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.
 
-###sidebar
+###site.aside-standard
 
 Chuck everything in here that you would have in your aside.
 
-###articles.sidebar
+###articles.aside
 
 Contains most things that were pulled out of the stock Articles templates but are repeated on both container and article template. Nicely wrapped in an aside
 
@@ -114,24 +114,25 @@ You can pretty much do what you want in this file, but point out developer, desi
 
 I generally use the following extras most of the time:
 
-* Ace (code editor). <del>A lot better than CodeMirror</del>. The new version of CodeMirror is a lot better than the previous one. So either of these are decent. CodeMirror also has the option for colour schemes for syntax highlighting.
-* Articles. This in turn installs a load of extras it needs
-* <del>Big Brother. A Google Analytics dashboard widget.</del> I've started using Google Analytics Dashboard Widget as it seems that BigBrother is broken for the latest MODX releases.
-* FormIt. For form sending/validation, etc
-* getRelated. Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
-* getResourceField. Useful for grabbing one bit of data from one single page. Kind of get resources, but blinkered.
-* getResources. Useful for all kinds of things.
-* GoogleSiteMap. Generates XML sitemaps for Spiders, etc
+* CodeMirror. Syntax highlighting and stuff for anything that isn't a standard content page.
+* [Articles](http://rtfm.modx.com/extras/revo/articles). This in turn installs a load of extras it needs. Useful for simple blogs.
+* Google Analytics Dashboard Widget - graphs and pretty things on your dashboard
+* [FormIt](http://rtfm.modx.com/extras/revo/formit). For form sending/validation, etc
+* [getRelated](http://rtfm.modx.com/extras/revo/getrelated). Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
+* [getResources](http://rtfm.modx.com/extras/revo/getresources). Useful for all kinds of things.
+* [GoogleSiteMap](http://rtfm.modx.com/extras/revo/googlesitemap). Generates XML sitemaps for Spiders, etc
 * [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
-* phpThumbOf. Crop, thumbnail and alter images automagically.
-* SimpleSearch. For use on the Page Not Found error page.
-* UltimateParent. Searches up branches to find parent pages at a chosen level. I use this for the bodyClass placeholder mostly.
-* Wayfinder. Makes menus easy. These can also be done with getResources!
+* [pThumb](https://github.com/oo12/phpThumbOf). Crop, thumbnail and alter images automagically. Offers improvements over the original phpThumbOf
+* [SimpleSearch](http://rtfm.modx.com/extras/revo/simplesearch). For use on the Page Not Found error page.
+* [Wayfinder](http://rtfm.modx.com/extras/revo/wayfinder). Makes menus easy. These can also be done with getResources!
+* [setPlaceholders](https://github.com/oo12/setPlaceholders/). Performs a combination of features from getResourceField, UltimateParent and others. Really flexible package and well documented!
+* [VersionX](https://github.com/Mark-H/VersionX2). Content / chunk version tracker extra. Useful for rolling back to a previous version of something.
+* TinyMCE. Pretty much the only choice you have for a reasonable text editor in MODX Revo. There is a CKEditor extra but the last time I tried it out it didn't have internal link integration like TinyMCE does. Shame because it's a much nicer RTE.
 
 
 ##Transport Package
 
-This is *untested*. Be careful, the sky may fall down.
+This is *not* *fully* *tested*. Be careful, the sky may fall down.
 
 * If you *only* want the snippets, chunks, assets and templates - use the default package.
 * If you want the *full* package - install the "subpackages" transport package. This includes many of the above mentioned extras rolled in.
