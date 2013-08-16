@@ -137,11 +137,17 @@ This is *not* *fully* *tested*. Be careful, the sky may fall down.
 * If you *only* want the snippets, chunks, assets and templates - use the default package.
 * If you want the *full* package - install the "subpackages" transport package. This includes many of the above mentioned extras rolled in.
 
-Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
+<del>Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
 
 You _need_ to remember to _change_ the SimpleSearch "landing page" id, as well as things for FormIt in the fi.contact-form chunk.
 
-Then install in the usual way once the package is detected.
+Then install in the usual way once the package is detected.</del>
+
+Now available on the MODX Extras repo
+
+[MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
+
+[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)
 
 ##Additional
 
