@@ -37,6 +37,19 @@
 }
 
 //------------------------------------------------------------------------------
+//       vertical centering (HAVE to specify a height for this method!)
+//-----------------------------------------------------------------------------
+.vertical-centre(@height) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: @height;
+    margin: auto;
+    position: absolute;
+}
+
+//------------------------------------------------------------------------------
 //       John's super duper alignment thingy
 //
 //       child elements under whatever you set this on should probably
