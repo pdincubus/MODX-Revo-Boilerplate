@@ -1,7 +1,7 @@
-[[$site.head? &bodyClass=`[[setPlaceholders? &ph=`Uparent.link_attributes !! link_attributes` &output=`1`]]` &template=`{TEMPLATE_FOLDER_NAME}` &websiteType=`article`]]
+[[setPlaceholders? &ph=`uParent == Uparent.link_attributes !! link_attributes` &output=`0` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]] blog` &template=`default` &websiteType=`article`]]
 
 <div id="main" class="cf">
-
     <article>
         <header class="articleTop">
         	<h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
@@ -24,4 +24,4 @@
     [[$articles.aside]]
 </div>
 
-[[$site.foot? &template=`{TEMPLATE_FOLDER_NAME}`]]
+[[$site.foot? &template=`default`]]

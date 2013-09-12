@@ -2,7 +2,7 @@
 
 A bunch of stuff to quickly get some sensible basics into a new [MODX Revolution](http://modx.com/) install. There's a folder for each type of resource. Simply make a new resource of that particular type and copy in the code.
 
-Now available on the MODX Extras repo
+Now available on the MODX Extras repo!
 
 [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
 
@@ -10,9 +10,9 @@ Now available on the MODX Extras repo
 
 ##Templates
 
-###BaseTemplate
+###Default
 
-Used by default in MODX, very basic HTML structure. Pulls in a head and foot chunk.
+Used by default in MODX, very basic HTML structure. Pulls in a head, foot and aside chunk.
 
 ###Article & ArticleContainer
 
@@ -30,19 +30,21 @@ Assets should usually be put in /assets/templates/{TEMPLATEFOLDERNAME}, e.g:
 * All images related to your template layout: /assets/templates/{TEMPLATEFOLDERNAME}/img
 * etc.
 
-The templates and chunks in this repository assume you've put these files in the same place. If not, make sure you update the relevant paths.
+The templates and chunks in this repository assume you've put these files in the same place. If not, make sure you update the relevant paths. The assets are bundled with the transport package, and put in /assets/templates/default
 
 ###CSS
 
 I use LESS just about all the time.
 
-Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method, clearfixes, classes, and basic print styles.
+Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method and background-size, clearfixes, classes, and basic print styles.
 
 ###js
 
 Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
 
 Selectivizr is also in there for those who want its functionality to support older versions of *cough* Internet Explorer.
+
+I've also put a couple of extras in the js/lib/plugins.js file - [DarthPhader](https://github.com/pdincubus/jquery.DarthPhader), [Shlider](https://github.com/pdincubus/jquery.Shlider) and [ShliderWay](https://github.com/pdincubus/jquery.ShliderWay) because I use them a lot.
 
 
 ##Chunks
@@ -67,17 +69,13 @@ Contains most things that were pulled out of the stock Articles templates but ar
 
 Install the FormIt extra, and with these two simple chunks you can easily drop a working contact form on any page with little to no customisation required.
 
-###wf.row-tpl
+###wf.row
 
 Wayfinder's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.
 
-###quip.comment
+###quip.comment, quip.add-comment, articles.latest-post-tpl, articles.archive-group-by-year, articles.article-row-tpl, articles.archive-row
 
 Replacement, lovely and trimmed down version of the standard Quip chunk
-
-###quip.add-comment, articles.latest-post-tpl, articles.archive-group-by-year, articles.article-row-tpl, articles.archive-row
-
-See above.
 
 
 ##Snippets
@@ -109,25 +107,31 @@ Disallows access to a bunch of MODX folders to SpiderBotMonkeys. Also points out
 
 You can pretty much do what you want in this file, but point out developer, designer, technology used, etc.
 
+###Search Results Page
+
+Clue is in the name really!
+
 
 ##Extras
 
 I generally use the following extras most of the time:
 
-* CodeMirror. Syntax highlighting and stuff for anything that isn't a standard content page.
 * [Articles](http://rtfm.modx.com/extras/revo/articles). This in turn installs a load of extras it needs. Useful for simple blogs.
-* Google Analytics Dashboard Widget - graphs and pretty things on your dashboard
+* [CodeMirror](http://modx.com/extras/package/codemirror). Syntax highlighting and stuff for anything that isn't a standard content page.
+* [Google Analytics Dashboard Widget](http://modx.com/extras/package/googleanalyticsdashboardwidget) - graphs and pretty things on your dashboard
 * [FormIt](http://rtfm.modx.com/extras/revo/formit). For form sending/validation, etc
+* [Gallery](http://modx.com/extras/package/gallery). Pictures. Grouped. Like in a gallery.
 * [getRelated](http://rtfm.modx.com/extras/revo/getrelated). Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
 * [getResources](http://rtfm.modx.com/extras/revo/getresources). Useful for all kinds of things.
 * [GoogleSiteMap](http://rtfm.modx.com/extras/revo/googlesitemap). Generates XML sitemaps for Spiders, etc
 * [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
-* [pThumb](https://github.com/oo12/phpThumbOf). Crop, thumbnail and alter images automagically. Offers improvements over the original phpThumbOf
+* [phpThumbsUp](http://modx.com/extras/package/phpthumbsup). Alternative to phpThumbof or pThumb. Does not hold up page load times like either of those. More config required, but performs well... or...
+* [pThumb](https://github.com/oo12/phpThumbOf). Crop, thumbnail and alter images automagically. Offers improvements over the original phpThumbOf.
+* [setPlaceholders](https://github.com/oo12/setPlaceholders/). Performs a combination of features from [getResourceField](http://modx.com/extras/package/getresourcefield), [UltimateParent](http://modx.com/extras/package/ultimateparent) and others. Really flexible package and well documented!
 * [SimpleSearch](http://rtfm.modx.com/extras/revo/simplesearch). For use on the Page Not Found error page.
-* [Wayfinder](http://rtfm.modx.com/extras/revo/wayfinder). Makes menus easy. These can also be done with getResources!
-* [setPlaceholders](https://github.com/oo12/setPlaceholders/). Performs a combination of features from getResourceField, UltimateParent and others. Really flexible package and well documented!
+* [TinyMCE](http://modx.com/extras/package/tinymce). Pretty much the only choice you have for a reasonable text editor in MODX Revo. There is a CKEditor extra but the last time I tried it out it didn't have internal link integration like TinyMCE does. Shame because it's a much nicer RTE.
 * [VersionX](https://github.com/Mark-H/VersionX2). Content / chunk version tracker extra. Useful for rolling back to a previous version of something.
-* TinyMCE. Pretty much the only choice you have for a reasonable text editor in MODX Revo. There is a CKEditor extra but the last time I tried it out it didn't have internal link integration like TinyMCE does. Shame because it's a much nicer RTE.
+* [Wayfinder](http://rtfm.modx.com/extras/revo/wayfinder). Makes menus easy. These can also be done with getResources!
 
 
 ##Transport Package
@@ -137,18 +141,16 @@ This is *not* *fully* *tested*. Be careful, the sky may fall down.
 * If you *only* want the snippets, chunks, assets and templates - use the default package.
 * If you want the *full* package - install the "subpackages" transport package. This includes many of the above mentioned extras rolled in.
 
-<del>Assets are not included in this package. To install, FTP to your /core/packages/ directory, go to Package Management and instead of clicking "Download Extras", click the arrow and choose "Search Locally For Packages".
-
-You _need_ to remember to _change_ the SimpleSearch "landing page" id, as well as things for FormIt in the fi.contact-form chunk.
-
-Then install in the usual way once the package is detected.</del>
-
 Now available on the MODX Extras repo
 
 [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
 
 [MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)
 
+
 ##Additional
 
-Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
+* Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
+* The background-size polyfill is from: [Louis Remi on Github](https://github.com/louisremi/background-size-polyfill)
+* The box-sizing polyfill is from: [Schepp on Github](https://github.com/Schepp/box-sizing-polyfill)
+

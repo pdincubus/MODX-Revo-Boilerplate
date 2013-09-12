@@ -1,7 +1,7 @@
 <article class="post">
-    <span class="date">[[+publishedon:strtotime:date=`%d`]] <span class="month">[[+publishedon:strtotime:date=`%b`]]</span></span>
     <header class="articleTop">
         <h2><a href="[[~[[+id]]]]">[[+pagetitle]]</a></h2>
+        <p>Posted on [[+publishedon:strtotime:date=`%b %d, %Y`]] by <a href="[[~[[+parent]]]]author/[[+publishedby:userinfo=`username`]]">[[+publishedby:userinfo=`username`]]</a>
         [[+comments_enabled:is=`1`:then=`<a href="[[~[[+id]]]]#comments" class="comments">[[%articles.comments]] ([[!QuipCount? &thread=`article-b[[+parent]]-[[+id]]`]])</a>`]]
     </header>
     <section class="entry">

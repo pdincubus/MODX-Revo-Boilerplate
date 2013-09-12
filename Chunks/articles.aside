@@ -9,7 +9,7 @@
     [[+comments_enabled:is=`1`:then=`
     <h3>Latest Comments</h3>
     <ul>
-        [[+latest_comments]]
+        [[+latest_comments:default=`<li>No comments yet!</li>`]]
     </ul>
     `]]
 

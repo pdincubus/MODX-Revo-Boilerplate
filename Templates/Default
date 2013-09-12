@@ -1,14 +1,14 @@
-[[$site.head? &bodyClass=`[[setPlaceholders? &ph=`Uparent.link_attributes !! link_attributes` &output=`1`]]` &template=`{TEMPLATE_FOLDER_NAME}` &websiteType=`website`]]
+[[setPlaceholders? &ph=`uParent == Uparent.link_attributes !! link_attributes` &output=`0` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]]` &template=`default` &websiteType=`website`]]
 
 <div id="main" class="cf">
-
     <article>
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+        [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
         [[*content]]
     </article>
 
     [[$site.aside-standard]]
-
 </div>
 
-[[$site.foot? &template=`{TEMPLATE_FOLDER_NAME}`]]
+[[$site.foot? &template=`default`]]

@@ -30,7 +30,7 @@
 			<input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone">
 		</p>
 		<p>
-			<label for="formQuery">What would you like to talk about? [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
+			<label for="formQuery">Query [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
 			<textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Enquiry">[[!+fi.formQuery]]</textarea>
 		</p>
 	</fieldset>
