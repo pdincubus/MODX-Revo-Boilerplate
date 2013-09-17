@@ -12,7 +12,7 @@
         [[!SimpleSearch? &searchIndex=`urlSearch` &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]
     </article>
 
-    [[$site.aside-standard]]
+    [[$site.aside]]
 </div>
 
 [[$site.foot? &template=`default`]]
