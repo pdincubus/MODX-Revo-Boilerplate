@@ -1,0 +1,16 @@
+[[setPlaceholders? &ph=`uParent == Uparent.link_attributes !! link_attributes` &output=`0` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]]` &template=`default` &websiteType=`website`]]
+
+<div id="main" class="cf">
+  <article>
+    <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+    [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
+    [[*content]]
+
+    [[!SimpleSearch? &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]
+</article>
+
+[[$site.aside]]
+</div>
+
+[[$site.foot? &template=`default`]]

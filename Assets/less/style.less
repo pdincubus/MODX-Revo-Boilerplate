@@ -3,31 +3,29 @@
 //----------------------------------------------------
 
 //combo of reset and normalize
-@import url(base/resetalize.less);
+@import url(inc/resetalize.less);
 //or if you prefer HTML5BP normalize, use this instead:
-//@import url(base/normalize.less);
+//@import url(inc/normalize.less);
 
 //pull in useful LESS classes for text-replacements, etc.
-@import url(base/classes.less);
+@import url(inc/classes.less);
 
 //helper classes
-@import url(base/helpers.less);
-
-//print styles
-@import url(base/print.less);
+@import url(inc/helpers.less);
 
 //sort out box-sizing. doesn't work in IE, thus the behaviour file. The behaviour file also has some issues but for the most part works. If you prefer old school width+padding+border= width, remove this line
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/default/js/lib/boxsizing.htc); }
-
-//NOTE: There is also a behaviour file specified in base/classes.less for background-size. You need to ensure the path to this file is correct, same for the above too!
+//NOTE: There is also a behaviour file specified in inc/classes.less for background-size. You need to ensure the path to this file is correct, same for the above too!
 
 //----------------------------------------------------
-//               main styles
+//               some basics
 //----------------------------------------------------
 
 //your base colours, fonts, typography
-@import url(colours-and-typography.less);
+@import url(base/site-fonts.less);
+@import url(base/site-typography.less);
 
+//warning box for old IE users
 #oldIe {
     width: 100%;
     padding: 10px;
@@ -41,17 +39,18 @@
     }
 }
 
+//save adding lots of classes to containers to clear floats.
 header, main, footer {
     .cf;
 }
 
-//main css here
-
 //----------------------------------------------------
-//               mobile, tablet, hi-dpi
+//       main site styles and media queries
 //----------------------------------------------------
 
-@import url(mobile.less);
-@import url(tablet.less);
-@import url(small-desktop.less);
-@import url(hi-dpi.less);
+@import url(media/media-large-desktop.less);
+@import url(media/media-small-desktop.less);
+@import url(media/media-tablet.less);
+@import url(media/media-mobile.less);
+@import url(media/media-hi-dpi.less);
+@import url(media/media-print.less);

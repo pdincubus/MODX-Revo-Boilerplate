@@ -6,9 +6,13 @@
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
         [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
         [[*content]]
+
+        <h2>Possible matches for '[[!currentUrl]]'</h2>
+        [[!formatSearchUrl? &requestIndex=`urlSearch`]]
+        [[!SimpleSearch? &searchIndex=`urlSearch` &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]
     </article>
 
-    [[$site.aside]]
+    [[$site.aside-standard]]
 </div>
 
 [[$site.foot? &template=`default`]]

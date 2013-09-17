@@ -18,6 +18,14 @@ Used by default in MODX, very basic HTML structure. Pulls in a head, foot and as
 
 For sites using Articles, you'll definitely want new templates for the layout in that section. These two templates have sane defaults and ensures all repeated code is pulled out into head, foot & articleSidebar chunks.
 
+###SearchResults
+
+Cereate a page, set this template for any searches made from the articles.aside chunk
+
+###PageNotFound
+
+Create a page, set this template, add the system setting for Error Page to point to this new resource
+
 
 ##Assets
 
@@ -40,7 +48,7 @@ Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explo
 
 ###js
 
-Includes Modernizr for YepNope and making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
+Includes Modernizr for making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
 
 Selectivizr is also in there for those who want its functionality to support older versions of *cough* Internet Explorer.
 
@@ -57,7 +65,7 @@ Beginning and end of the templates. I've added two placeholders - [[+bodyClass]]
 
 [[+template]] help make your [[$site.head]] & [[$site.foot]] more generic and easier to chuck into a new site without messing too much. See the BaseTemplate template for how to use.
 
-###site.aside-standard
+###site.aside
 
 Chuck everything in here that you would have in your aside.
 
@@ -95,21 +103,13 @@ Some preformatting for passing to the SimpleSearch on the Page Not Found error p
 
 ##Content Pages
 
-###Page Not Found
-
-Requires SimpleSearch extra, formatSearchUrl and currentUrl snippets. Does a lookup for what page you tried to access and shows results in a list (if any).
-
-###robots.txt
+###robots
 
 Disallows access to a bunch of MODX folders to SpiderBotMonkeys. Also points out the URL of the sitemap (edit this to your URL). You'll need to install the GoogleSiteMap extra to make the sitemap.xml file
 
-###humans.txt
+###humans
 
 You can pretty much do what you want in this file, but point out developer, designer, technology used, etc.
-
-###Search Results Page
-
-Clue is in the name really!
 
 
 ##Extras
@@ -145,7 +145,9 @@ Now available on the MODX Extras repo
 
 [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
 
-[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)
+The subpackages extra is still available at previous version, but won't be updated again as I've run into problems installing/being able to uninstall multiple packages this way. For now, I've been installing all the packages manually to avoid problems, and using this boilerplate for the tempaltes/chunks/snippets/assets
+
+<del>[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)</del>
 
 
 ##Additional

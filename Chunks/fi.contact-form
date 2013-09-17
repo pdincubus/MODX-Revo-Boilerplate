@@ -7,32 +7,32 @@
    &emailFrom=`{EMAIL_ADDRESS}`
    &redirectTo=`{ID_OF_THANK_YOU_PAGE}`
    &validate=`formName:required,
-	  formEmailAddress:email:required,
-	  formPhoneNumber:required,
-	  formQuery:required`
+      formEmailAddress:email:required,
+      formPhoneNumber:required,
+      formQuery:required`
 ]]
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
 
 <form method="post" action="[[~[[*id]]]]" id="contactus">
-	<fieldset>
-		<legend>Contact Us</legend>
-		<p>
-			<label for="formName">Name [[!+fi.error.formName:notempty=`<span class="error">[[!+fi.error.formName]]</span>`]]</label>
-			<input type="text" name="formName" id="formName" value="[[!+fi.formName]]" placeholder="Name">
-		</p>
-		<p>
-			<label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`<span class="error">[[!+fi.error.formEmailAddress]]</span>`]]</label>
-			<input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email">
-		</p>
-		<p>
-			<label for="formPhoneNumber">Phone number [[!+fi.error.formPhoneNumber:notempty=`<span class="error">[[!+fi.error.formPhoneNumber]]</span>`]]</label>
-			<input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone">
-		</p>
-		<p>
-			<label for="formQuery">Query [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
-			<textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Enquiry">[[!+fi.formQuery]]</textarea>
-		</p>
-	</fieldset>
-	<button type="submit">Send</button>
+    <fieldset>
+        <legend>Contact Us</legend>
+        <p>
+            <label for="formName">Name [[!+fi.error.formName:notempty=`<span class="error">[[!+fi.error.formName]]</span>`]]</label>
+            <input type="text" name="formName" id="formName" value="[[!+fi.formName]]" placeholder="Name">
+        </p>
+        <p>
+            <label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`<span class="error">[[!+fi.error.formEmailAddress]]</span>`]]</label>
+            <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email">
+        </p>
+        <p>
+            <label for="formPhoneNumber">Phone number [[!+fi.error.formPhoneNumber:notempty=`<span class="error">[[!+fi.error.formPhoneNumber]]</span>`]]</label>
+            <input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone">
+        </p>
+        <p>
+            <label for="formQuery">Query [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
+            <textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Enquiry">[[!+fi.formQuery]]</textarea>
+        </p>
+    </fieldset>
+    <button type="submit">Send</button>
 </form>

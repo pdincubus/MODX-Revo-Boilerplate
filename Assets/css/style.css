@@ -326,6 +326,66 @@ figure {
 .cf {
   *zoom: 1;
 }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/assets/templates/default/js/lib/boxsizing.htc);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+body {
+  font-family: 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+  color: #333333;
+}
+#oldIe {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+}
+#oldIe p {
+  margin: 0;
+}
+header,
+main,
+footer {
+  *zoom: 1;
+}
+header:before,
+main:before,
+footer:before,
+header:after,
+main:after,
+footer:after {
+  content: " ";
+  display: table;
+}
+header:after,
+main:after,
+footer:after {
+  clear: both;
+}
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  
+}
 @media print {
   * {
     background: transparent !important;
@@ -380,64 +440,4 @@ figure {
   h3 {
     page-break-after: avoid;
   }
-}
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  *behavior: url(/assets/templates/default/js/lib/boxsizing.htc);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
-}
-body {
-  font-family: 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
-  color: #333333;
-}
-#oldIe {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background: #000;
-  color: #fff;
-  font-size: 16px;
-}
-#oldIe p {
-  margin: 0;
-}
-header,
-main,
-footer {
-  *zoom: 1;
-}
-header:before,
-main:before,
-footer:before,
-header:after,
-main:after,
-footer:after {
-  content: " ";
-  display: table;
-}
-header:after,
-main:after,
-footer:after {
-  clear: both;
-}
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  
-}
-@media only screen and (min-width: 769px) and (max-width: 1025px) {
-  
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-  
 }
