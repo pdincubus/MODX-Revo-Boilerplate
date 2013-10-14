@@ -1,7 +1,2 @@
 User-agent: *
-Disallow: /assets/components/
-Disallow: /manager/
-Disallow: /build/
-Disallow: /connectors/
-Disallow: /core/
 Sitemap: [[++site_url]]sitemap.xml

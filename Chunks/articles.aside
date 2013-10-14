@@ -6,10 +6,10 @@
         `]]
     </ul>
 
-    [[+comments_enabled:is=`1`:then=`
+    [[+latest_comments:notempty=`
     <h3>Latest Comments</h3>
     <ul>
-        [[+latest_comments:default=`<li>No comments yet!</li>`]]
+        [[+latest_comments]]
     </ul>
     `]]
 

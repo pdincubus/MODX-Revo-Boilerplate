@@ -1,7 +1,7 @@
 [[setPlaceholders? &ph=`uParent == Uparent.link_attributes !! link_attributes` &output=`0` &delimiter=` `]]
 [[$site.head? &bodyClass=`[[+uParent]] blog` &template=`default` &websiteType=`article`]]
 
-<div id="main" class="cf">
+<main role="main">
     <article>
         <header class="articleTop">
         	<h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
@@ -22,6 +22,6 @@
     </article>
 
     [[$articles.aside]]
-</div>
+</main>
 
 [[$site.foot? &template=`default`]]
