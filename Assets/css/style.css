@@ -67,7 +67,8 @@ time,
 mark,
 audio,
 video,
-hr {
+hr,
+main {
   margin: 0;
   padding: 0;
   border: none;
@@ -342,7 +343,6 @@ h6 {
 }
 body {
   font-family: 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
-  color: #333333;
 }
 #oldIe {
   width: 100%;
@@ -357,21 +357,25 @@ body {
 }
 header,
 main,
-footer {
+footer,
+article {
   *zoom: 1;
 }
 header:before,
 main:before,
 footer:before,
+article:before,
 header:after,
 main:after,
-footer:after {
+footer:after,
+article:after {
   content: " ";
   display: table;
 }
 header:after,
 main:after,
-footer:after {
+footer:after,
+article:after {
   clear: both;
 }
 @media only screen and (min-width: 769px) and (max-width: 1025px) {

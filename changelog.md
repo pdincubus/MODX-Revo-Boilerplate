@@ -2,6 +2,13 @@ For all info: https://github.com/pdincubus/MODX-Revo-Boilerplate/
 
 #Most recent additions
 
+##1.1.1
+    * Changed #main to HTML5 main element
+    * Tweak to sidebars
+    * LESS changes for main element, more auto clearfixes
+    * Reduced robots.txt to avoid giving away MODX directory names
+    * Post Installation Checklist: https://github.com/pdincubus/MODX-Revo-Boilerplate/blob/master/Post-Installation-Checklist.md
+
 ##1.1
     * ALWAYS BACK UP YOUR CUSTOMISATIONS BEFORE UPGRADING - Any upgrades will overwrite all the default installed snippets/chunks/templates!
     * Refactored a lot of stuff

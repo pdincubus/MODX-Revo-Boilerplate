@@ -6,7 +6,11 @@ Now available on the MODX Extras repo!
 
 [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
 
-[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)
+<del>[MODX-Revo-Boilerplate-With-Subpackages](http://modx.com/extras/package/modxrevoboilerplatewithsubpackages)</del> Deprecated.
+
+##Post Installation Checklist
+
+Stuff you should probably run through manually to make sure things are in tip-top condition. [Checklist](https://github.com/pdincubus/MODX-Revo-Boilerplate/blob/master/Post-Installation-Checklist.md)
 
 ##Templates
 
