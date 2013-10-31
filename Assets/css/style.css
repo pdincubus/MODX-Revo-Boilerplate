@@ -358,24 +358,28 @@ body {
 header,
 main,
 footer,
-article {
+article,
+aside {
   *zoom: 1;
 }
 header:before,
 main:before,
 footer:before,
 article:before,
+aside:before,
 header:after,
 main:after,
 footer:after,
-article:after {
+article:after,
+aside:after {
   content: " ";
   display: table;
 }
 header:after,
 main:after,
 footer:after,
-article:after {
+article:after,
+aside:after {
   clear: both;
 }
 @media only screen and (min-width: 769px) and (max-width: 1025px) {
