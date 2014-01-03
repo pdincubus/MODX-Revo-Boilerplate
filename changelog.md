@@ -2,6 +2,12 @@ For all info: https://github.com/pdincubus/MODX-Revo-Boilerplate/
 
 #Most recent additions
 
+##1.2.0
+    * Updated head chunk for new modernizr and new style (NO IE CONDITIONAL COMMENTS!) html setup from HTML5 Boilerplate
+    * Updated humans.txt to match HTML5BP
+    * Updated LESS files to simplify a bit
+    * New modernizr in default/js/lib template folder on install
+
 ##1.1.1
     * Changed #main to HTML5 main element
     * Tweak to sidebars
