@@ -1,18 +1,15 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# humanstxt.org/
+# The humans responsible & technology colophon
 
-/* SITE */
+# TEAM
 
-Lovingly handcrafted
-Framework: Templates based on HTML5 Boilerplate (http://html5boilerplate.com)
-Technology: LESS, CSS, HTML5, jQuery, MODx 2.2.x
+    <name> -- <role> -- <twitter>
 
-/* TEAM */
+# THANKS
 
-Lead dev: Your name
-Twitter: @yourname
-Location: YOUR LOCATION
+    <name>
 
-Lead design: Your name
-Twitter: @yourname
-Location: YOUR LOCATION
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
