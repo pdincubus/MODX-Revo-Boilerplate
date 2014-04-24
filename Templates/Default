@@ -1,5 +1,5 @@
-[[setPlaceholders? &ph=`uParent == Uparent.link_attributes !! link_attributes` &output=`0` &delimiter=` `]]
-[[$site.head? &bodyClass=`[[+uParent]]` &template=`default` &websiteType=`website`]]
+[[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`website` &template=`default`]]
 
 <main role="main">
     <article>
@@ -7,8 +7,6 @@
         [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
         [[*content]]
     </article>
-
-    [[$site.aside]]
 </main>
 
 [[$site.foot? &template=`default`]]
