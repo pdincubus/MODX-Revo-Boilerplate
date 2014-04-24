@@ -2,6 +2,18 @@ For all info: https://github.com/pdincubus/MODX-Revo-Boilerplate/
 
 #Most recent additions
 
+##1.3.0
+    * update setPlaceholder calls all round
+    * update modernizr to 2.7.2
+    * update jQuery to 1.11.0 and 2.1.0
+    * make the contact form configurable
+    * new contact template
+    * replace Wayfinder call with pdoMenu
+    * new outerTpl chunk for pdoMenu/Wayfinder
+    * update viewport meta tag to match HTML5BP
+    * Only show Quip stuff if comments_enabled is set on article template
+    * remove site.aside from templates
+
 ##1.2.0
     * Updated head chunk for new modernizr and new style (NO IE CONDITIONAL COMMENTS!) html setup from HTML5 Boilerplate
     * Updated humans.txt to match HTML5BP
