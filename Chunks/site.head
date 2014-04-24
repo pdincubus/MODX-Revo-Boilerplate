@@ -5,8 +5,7 @@
     <title>[[*pagetitle:escape]] | [[++site_name]]</title>
     <base href="[[++site_url]]">
     <meta name="description" content="[[*description]]">
-    <!--set viewport for mobile devices, if you want to enable pinch-zoom, remove maximum-scale or change the value-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
 
     <!--facebook open graph stuff -->
     <meta property="og:site_name" content="[[++site_name]]">
@@ -23,7 +22,7 @@
     <!-- //end webmaster tools verification ids  -->
 
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
-    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.7.1.min.js"></script>
+    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.7.2.min.js"></script>
 </head>
 
 <body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
@@ -37,7 +36,6 @@
         <a href="[[++site_url]]" id="logo">[[++site_name]]</a>
 
         <nav>
-            [[Wayfinder? &startId=`0` &level=`1` &rowTpl=`wf.row`]]
+            [[pdoMenu? &startId=`0` &level=`1` &rowTpl=`wf.row` &outerTpl=`wf.outer`]]
         </nav>
     </header>
-
