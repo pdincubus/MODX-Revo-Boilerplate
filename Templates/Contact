@@ -1,0 +1,21 @@
+[[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`website` &template=`default`]]
+
+<main role="main">
+    <article>
+        <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+        [[*content]]
+
+        [[$fi.contact-form?
+            &formId=`contactUs`
+            &emailChunk=`fi.contact-email`
+            &emailToAddress=`{EMAIL_ADDRESS}`
+            &emailFromName=`{NAME}`
+            &emailFromAddress=`{EMAIL_ADDRESS}`
+            &validation=`formName:required,formEmailAddress:email:required,formQuery:required`
+            &redirectTo=`{PAGE_ID}`
+        ]]
+    </article>
+</main>
+
+[[$site.foot? &template=`default`]]

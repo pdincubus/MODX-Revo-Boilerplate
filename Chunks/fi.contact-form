@@ -1,20 +1,17 @@
 [[!FormIt?
    &hooks=`fiProcessArrays,email,redirect`
-   &emailTpl=`fi.contact-email`
-   &emailTo=`{EMAIL_ADDRESS}`
+   &emailTpl=`[[+emailChunk]]`
+   &emailTo=`[[+emailToAddress]]`
    &emailSubject=`Contact from [[++site_name]]`
-   &emailFromName=`[[++site_name]]`
-   &emailFrom=`{EMAIL_ADDRESS}`
-   &redirectTo=`{ID_OF_THANK_YOU_PAGE}`
-   &validate=`formName:required,
-      formEmailAddress:email:required,
-      formPhoneNumber:required,
-      formQuery:required`
+   &emailFromName=`[[+emailFromName]]`
+   &emailFrom=`[[+emailFromAddress]]`
+   &redirectTo=`[[+redirectTo]]`
+   &validate=`[[+validation]]`
 ]]
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
 
-<form method="post" action="[[~[[*id]]]]" id="contactus">
+<form method="post" action="[[~[[*id]]]]"[[+formId:notempty=` id="[[+formId]]"`]]>
     <fieldset>
         <legend>Contact Us</legend>
         <p>
@@ -23,14 +20,14 @@
         </p>
         <p>
             <label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`<span class="error">[[!+fi.error.formEmailAddress]]</span>`]]</label>
-            <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email">
+            <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email address">
         </p>
         <p>
-            <label for="formPhoneNumber">Phone number [[!+fi.error.formPhoneNumber:notempty=`<span class="error">[[!+fi.error.formPhoneNumber]]</span>`]]</label>
-            <input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone">
+            <label for="formPhoneNumber">Telephone number [[!+fi.error.formPhoneNumber:notempty=`<span class="error">[[!+fi.error.formPhoneNumber]]</span>`]]</label>
+            <input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone number">
         </p>
         <p>
-            <label for="formQuery">Query [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
+            <label for="formQuery">Enquiry [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
             <textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Enquiry">[[!+fi.formQuery]]</textarea>
         </p>
     </fieldset>
