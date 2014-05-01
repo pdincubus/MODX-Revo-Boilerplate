@@ -14,7 +14,8 @@
     <body>
         <table border="0" cellspacing="0" cellpadding="0">
             <tbody>
-                <th scope="row" style="width:150px">Name</th>
+                <tr>
+                    <th scope="row" style="width:150px">Name</th>
                     <td colspan="2">[[+formName:notags]]</td>
                 </tr>
                 <tr>
