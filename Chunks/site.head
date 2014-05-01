@@ -4,22 +4,32 @@
     <meta charset="utf-8">
     <title>[[*pagetitle:escape]] | [[++site_name]]</title>
     <base href="[[++site_url]]">
-    <meta name="description" content="[[*description]]">
+    [[*description:notempty=`<meta name="description" content="[[*description]]">`]]
     <meta name="viewport" content="width=device-width">
 
-    <!--facebook open graph stuff -->
+    <!--facebook open graph-->
     <meta property="og:site_name" content="[[++site_name]]">
     <meta property="og:title" content="[[*pagetitle:escape]]">
     <meta property="og:description" content="[[*description:escape]]">
     <meta property="og:type" content="[[+websiteType]]">
     <meta property="og:image" content="{URL_TO_IMAGE}">
     [[+websiteType:eq=`article`:then=`<meta property="article:published_time" content="[[*publishedon]]">`]]
-    <!--//end facebook open graph stuff-->
+    <!--//facebook open graph-->
 
-    <!--webmaster tools verification ids  -->
+    <!--twitter cards-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{@TWITTER_HANDLE}">
+    <meta name="twitter:title" content="[[*longtitle:default=`[[*pagetitle]]`]]">
+    <meta name="twitter:description" content="[[*description]]">
+    <meta name="twitter:creator" content="{@TWITTER_HANDLE}">
+    <meta name="twitter:image:src" content="http://placekitten.com/250/250">
+    <meta name="twitter:domain" content="[[++site_url]]">
+    <!--//twitter cards-->
+
+    <!--webmaster tools verification ids-->
     <meta name="google-site-verification" content="{VERIFICATION_CODE}">
     <meta name="msvalidate.01" content="{VERIFICATION_CODE}">
-    <!-- //end webmaster tools verification ids  -->
+    <!-- //webmaster tools verification ids -->
 
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
     <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.7.2.min.js"></script>
