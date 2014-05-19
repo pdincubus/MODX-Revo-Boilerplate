@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en-GB" class="no-js">
 <head>
     <meta charset="utf-8">
     <title>[[*pagetitle:escape]] | [[++site_name]]</title>
@@ -32,7 +32,7 @@
     <!-- //webmaster tools verification ids -->
 
     <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
-    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.7.2.min.js"></script>
+    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.8.1.min.js"></script>
 </head>
 
 <body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
