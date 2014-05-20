@@ -1,0 +1,35 @@
+<?php
+/*
+ * createSelectOptions
+ * Author: Phil Steer @pdincubus, 2014
+ * Options:
+ * tvName. The TV to fetch values for
+ * tpl. The chunk to use to format the option outputs
+ *
+ */
+
+$tvName = $modx->getOption('tvName', $scriptProperties, '');
+$tpl = $modx->getOption('tpl', $scriptProperties, '');
+
+$filterTV = $modx->getObject('modTemplateVar', array('name' => $tvName));
+
+$props = $filterTV->get('elements');
+
+$filtersArray = explode('||', $props);
+
+
+foreach( $filtersArray as $k=>$v ) {
+  $v=explode("==",$v);
+  $a[$v[1]]=$v[0];
+}
+
+$output = '';
+foreach ($a as $key=>$value) {
+    $stuff = array(
+        'key' => $key,
+        'value' => $value,
+    );
+    $output .= $modx->getChunk($tpl, $stuff);
+}
+
+return $output;

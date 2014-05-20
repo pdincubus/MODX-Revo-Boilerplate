@@ -1,0 +1,46 @@
+<?php
+/*
+ * dateFilters
+ * Author: Phil Steer @pdincubus, 2014
+ * Helps figure out month-by-month navigation buttons for quasi-calendar listings
+ * outputs placeholders
+ *
+ * Options: NONE
+ * Placeholders:
+ * nextMonth. Y-m format (4 digit year and 2 digit month)
+ * prevMonth. Y-m format
+ * currentDate. F format (month name)
+ * dateStart. datetime full format for the beginning of the month limit
+ * dateEnd. datetime full format for the end of the month limit
+ *
+ */
+
+//grab date from query string
+if(isset($_GET['date'])) {
+    $dateFormat = $_GET['date'] . '-01';
+    $current = date('F',strtotime($_GET['date']));
+} else {
+//or set to current month if none provided
+    $dateFormat = date('Y-m',time());
+    $current = date('F',time());
+}
+
+$next = new DateTime($dateFormat);
+$prev = new DateTime($dateFormat);
+$date = new DateTime($dateFormat);
+
+//figure out the start and end dates for the month we're looking at
+//and make sure they're in the same format as the TV strings are stored
+$dateStart = $date->format('Y-m-d H:i:s');
+$dateEnd = $date->modify('+1 month')->modify('-1 day')->format('Y-m-d H:i:s');
+
+//set values for prev and next months in correct format
+$prev = $prev->modify('-1 month')->format('Y-m');
+$next = $next->modify('+1 month')->format('Y-m');
+
+//set placeholder values for next and prev buttons
+$modx->setPlaceholder('nextMonth',$next);
+$modx->setPlaceholder('prevMonth',$prev);
+$modx->setPlaceholder('currentDate',$current);
+$modx->setPlaceholder('dateStart',$dateStart);
+$modx->setPlaceholder('dateEnd',$dateEnd);

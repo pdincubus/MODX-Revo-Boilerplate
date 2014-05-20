@@ -1,0 +1,17 @@
+<?php
+/*
+ * getUrlparam
+ * Author: Phil Steer @pdincubus, 2014
+ * Ronseal. Options:
+ * key. What parameter to get from the current URL
+ * placeholderPrefix. Helps you avoid getting placeholder naming conflicts
+ *
+ */
+
+$key = $modx->getOption('key', $scriptProperties, '');
+$placeholderPrefix = $modx->getOption('prefix', $scriptProperties, 'gup');
+
+$filter = (isset ($_REQUEST[$key])) ? $_REQUEST[$key] : '%';
+if($filter == 'all') { $filter = '%'; }
+
+$modx->setPlaceholder($placeholderPrefix.'.'.$key,$filter);
