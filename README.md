@@ -1,13 +1,24 @@
 #MODX Revolution Boilerplate basics
 
-A bunch of stuff to quickly get some sensible basics into a new [MODX Revolution](http://modx.com/) install. There's a folder for each type of resource. Simply make a new resource of that particular type and copy in the code.
+This is mostly a duplicate of the original MODX Revo Boilerplate that I created - but transitioned to SCSS and set up with Grunt for niceness.
 
-Now available on the MODX Extras repo!
+##Getting started
 
-[MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
+This repository is set up for using [Grunt](http://gruntjs.com/). As such, the transport package (from here or from the MODX Extras repo) ONLY contains chunks, snippets and templates and NO assets. Setting Grunt up as per the below will give you lovely minified Javascript and CSS output and allow you to use the lovely SCSS for writing all your styles.
 
+###Prerequisites
 
-##Post Installation Checklist
+1. Node.js
+2. This repo.
+
+###Do stuff
+
+* Clone this repo.
+* cd /this/dir
+* npm install
+* grunt -v
+
+##MODX Post Installation Checklist
 
 Stuff you should probably run through manually to make sure things are in tip-top condition. [Checklist](https://github.com/pdincubus/MODX-Revo-Boilerplate/blob/master/Post-Installation-Checklist.md)
 
@@ -33,29 +44,6 @@ Create a page, set this template for any searches made from the articles.aside c
 
 Create a page, set this template, add the system setting for Error Page to point to this new resource
 
-
-##Assets
-
-Assets should usually be put in /assets/templates/{TEMPLATEFOLDERNAME}, e.g:
-
-* CSS: /assets/templates/{TEMPLATEFOLDERNAME}/css
-* LESS: /assets/templates/{TEMPLATEFOLDERNAME}/less
-* All javascript libraries, jQuery, Modernizr, etc: /assets/templates/{TEMPLATEFOLDERNAME}/js/lib
-* All your custom js files: /assets/templates/{TEMPLATEFOLDERNAME}/js
-* All images related to your template layout: /assets/templates/{TEMPLATEFOLDERNAME}/img
-* etc.
-
-The templates and chunks in this repository assume you've put these files in the same place. If not, make sure you update the relevant paths. The assets are bundled with the transport package, and put in /assets/templates/default
-
-###CSS
-
-Includes the HTML5 Boilerplate normalise CSS (with a few tweaks), Internet Explorer HTC behaviour file for border-box box-sizing method and background-size, clearfixes, classes, and basic print styles. Open the files and tweak to your liking.
-
-###js
-
-Includes Modernizr for making people think that old versions of Internet Explorer are futuristic. Kind of. Also includes local version jQuery for fallback should the CDN download fail, and jQuery Easing for nicer animations.
-
-Selectivizr is also in there for those who want its functionality to support older versions of *cough* Internet Explorer.
 
 ##Chunks
 
@@ -138,11 +126,8 @@ Other recommendations:
 
 * [ClientConfig](https://www.modmore.com/extras/clientconfig/). Lets you set up global placeholders that your clients can edit easily.
 * [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
+* [Collections](http://modx.com/extras/package/collections). Hide child pages in the resource tree and gives you a grid for easy searching/viewing of the child pages.
 
-
-##Transport Package
-
-Now available on the MODX Extras repo: [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
 
 
 ##Additional
