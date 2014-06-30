@@ -2,12 +2,18 @@
             <p>&copy; [[!copyYears?startYear=`2013`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
         </footer>
 
-        <script src="/assets/templates/[[+template]]/js/main.min.js"></script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-1.11.1.min.js"><\/script>')</script>
         <!--[if (gte IE 6)&(lte IE 8)]>
           <script type="text/javascript" src="/assets/templates/[[+template]]/js/selectivizr-min.js"></script>
         <![endif]-->
 
+        <!-- Don't need to support older browsers? Use jQuery 2 instead, remove the jQuqery 1.x and selectivizr lines above and uncomment the lines below! -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/templates/[[+template]]/js/lib/jquery-2.1.1.min.js"><\/script>')</script>-->
+
+        <script src="/assets/templates/[[+template]]/js/lib/plugins.js"></script>
+        <script src="/assets/templates/[[+template]]/js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
