@@ -1,0 +1,114 @@
+//----------------------------------------------------
+//      normalise, classes, fonts and colours
+//----------------------------------------------------
+
+//combo of reset and normalize
+@import url(inc/resetalize.less);
+//or if you prefer HTML5BP normalize, use this instead:
+//@import url(inc/normalize.less);
+
+//pull in useful LESS classes for text-replacements, etc.
+@import url(inc/classes.less);
+
+//helper classes
+@import url(inc/helpers.less);
+
+//sort out box-sizing. doesn't work in IE, thus the behaviour file. The behaviour file also has some issues but for the most part works. If you prefer old school width+padding+border= width, remove this line
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(/assets/templates/default/js/lib/htc/boxsizing.htc); }
+//NOTE: There is also a behaviour file specified in inc/classes.less for background-size. You need to ensure the path to this file is correct, same for the above too!
+
+//----------------------------------------------------
+//                   fonts
+//----------------------------------------------------
+
+@titles:    'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+@bodycopy:  'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+
+//----------------------------------------------------
+//                   base typography
+//----------------------------------------------------
+
+body {
+    font-family: @bodycopy;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: (20/14)*100%;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @titles;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: (34/30)*100%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: (30/26)*100%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: (26/22)*100%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: (22/18)*100%;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: (20/16)*100%;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: (18/14)*100%;
+    margin-bottom: 0;
+    font-family: @bodycopy;
+    font-weight: 700;
+}
+
+//warning box for old IE users
+#oldIe {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+
+    p {
+        margin: 0;
+    }
+}
+
+//save adding lots of classes to containers to clear floats.
+header, main, footer, article, aside {
+    .cf;
+}
+
+//----------------------------------------------------
+//       main site styles and media queries
+//----------------------------------------------------
+
+@import url(media/media-large-desktop.less);
+@import url(media/media-small-desktop.less);
+@import url(media/media-tablet.less);
+@import url(media/media-mobile.less);
+@import url(media/media-hi-dpi.less);
+@import url(media/media-print.less);
