@@ -1,12 +1,2 @@
-
-dist
-node_modules
-src/css
-src/js/script.js
-src/js/head.js
-.sass-cache
-.ftppass
-.grunt/ftpush/build.json
-scss-lint-report.xml
-*.sublime-project
-*.sublime-workspace
+.DS_Store
+Assets/js/vendor/.DS_Store
