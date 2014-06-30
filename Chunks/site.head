@@ -31,8 +31,8 @@
     <meta name="msvalidate.01" content="{VERIFICATION_CODE}">
     <!-- //webmaster tools verification ids -->
 
-    <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.css">
-    <script src="/assets/templates/[[+template]]/js/lib/modernizr-2.8.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/templates/[[+template]]/css/style.min.css">
+    <script src="/assets/templates/[[+template]]/js/head.min.js"></script>
 </head>
 
 <body[[+bodyClass:notempty=` class="[[+bodyClass]]"`]]>
