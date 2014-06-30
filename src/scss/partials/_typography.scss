@@ -1,0 +1,78 @@
+//----------------------------------------------------
+//                   fonts
+//----------------------------------------------------
+
+$font-sans:             "Helvetica Neue", helvetica, arial, verdana, sans-serif !default;
+$font-serif:            Georgia, "Times New Roman", Times, serif !default;
+$font-mono:             Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$heading-font-family:   "Helvetica Neue", helvetica, arial, verdana, sans-serif !default;
+
+//----------------------------------------------------
+// base typography
+//----------------------------------------------------
+
+//shamelessly stolen from Twitter Bootstrap
+
+//sizes
+$font-size:          14px;
+
+$font-size-h1:       30px;
+$font-size-h2:       26px;
+$font-size-h3:       22px;
+$font-size-h4:       18px;
+$font-size-h5:       16px;
+$font-size-h6:       14px;
+
+//line heights
+$line-height-base:        1.428571429; // 20/14
+$line-height-computed:    20px;
+
+//weights
+$font-weight-light:       100;
+$font-weight-regular:     400;
+$font-weight-bold:        600;
+
+body {
+    font-family: $font-sans;
+    font-size: $font-size;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+}

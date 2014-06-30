@@ -1,0 +1,85 @@
+//----------------------------------------------------
+//      media queries mixin
+//
+//      mammoth: 1366px+
+//      tiger: 1024px - 1365px
+//      badger: 768px - 1023px
+//      ferret: 481px - 767px
+//      squirrel: up to 480px
+//
+//      horse: Anything bigger than fox (c4 specific breakpoint)
+//      fox: up to 535px (c4 specific breakpoint)
+//
+//      retina: self explanatory
+//
+//      Use like this:
+//      .classname {
+//          width: 25%;
+//
+//          @include bp(squirrel) {
+//              width: 100%;
+//          }
+//      }
+//
+//----------------------------------------------------
+
+@mixin bp($point) {
+    //----------------------------------------------------
+    //  big desktops
+    //----------------------------------------------------
+
+    @if $point == mammoth {
+        @media screen and (min-width: 1366px) { @content; }
+    }
+
+    //----------------------------------------------------
+    //  iPad landscape and small desktop
+    //----------------------------------------------------
+    @else if $point == tiger {
+        @media screen and (min-width: 1024px) and (max-width: 1365px) { @content; }
+    }
+
+    //----------------------------------------------------
+    //  iPad portrait
+    //----------------------------------------------------
+
+    @else if $point == badger {
+        @media screen and (min-width: 768px) and (max-width: 1023px) { @content; }
+    }
+
+    //----------------------------------------------------
+    //  big mobiles / small tablet
+    //----------------------------------------------------
+
+    @else if $point == ferret {
+        @media screen and (min-width: 481px) and (max-width: 767px) { @content; }
+    }
+
+    //----------------------------------------------------
+    //  small screens / iPhone
+    //----------------------------------------------------
+
+    @else if $point == squirrel {
+        @media screen and (max-width: 480px) { @content; }
+    }
+
+    //----------------------------------------------------
+    //  channel 4 current breakpoints
+    //----------------------------------------------------
+
+    @else if $point == horse {
+        @media screen and (min-width: 536px) { @content; }
+    }
+    @else if $point == fox {
+        @media screen and (max-width: 535px) { @content; }
+    }
+
+    //----------------------------------------------------
+    // retina screens (ish)
+    //----------------------------------------------------
+
+    @else if $point == retina {
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+               only screen and (min-resolution: 144dpi) { @content; }
+    }
+}
